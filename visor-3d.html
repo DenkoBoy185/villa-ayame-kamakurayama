@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VILLA AYAME — Maqueta 3D Interactiva & Blender 5.0 Cycles</title>
+  <style>
+    :root {
+      --bg-dark: #070b12;
+      --panel-bg: rgba(15, 23, 42, 0.88);
+      --border: #1e293b;
+      --gold: #eab308;
+      --cyan: #38bdf8;
+      --pink: #f472b6;
+      --green: #4ade80;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text);
+      overflow: hidden;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      height: 58px;
+      background: rgba(10, 15, 29, 0.95);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 20;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand h1 {
+      font-size: 1.05rem;
+      color: var(--gold);
+      letter-spacing: 0.6px;
+    }
+    .brand span {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    .mode-tabs {
+      display: flex;
+      gap: 8px;
+    }
+    .tab-btn {
+      background: #1e293b;
+      color: var(--text);
+      border: 1px solid #334155;
+      padding: 7px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.82rem;
+      font-weight: 600;
+      transition: all 0.18s;
+    }
+    .tab-btn:hover { border-color: var(--gold); }
+    .tab-btn.active {
+      background: var(--gold);
+      color: #0f172a;
+      border-color: var(--gold);
+    }
+    #main-area {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+    #canvas-container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    /* Floating HUD Left */
+    .hud-left {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      width: 310px;
+      background: var(--panel-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      z-index: 10;
+      max-height: calc(100vh - 95px);
+      overflow-y: auto;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.6);
+    }
+    .hud-section-title {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--gold);
+      margin: 12px 0 8px 0;
+      font-weight: 700;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 4px;
+    }
+    .hud-section-title:first-child { margin-top: 0; }
+    .btn-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+    .cam-btn {
+      background: #1e293b;
+      color: #e2e8f0;
+      border: 1px solid #334155;
+      padding: 7px 9px;
+      border-radius: 6px;
+      font-size: 0.76rem;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.15s;
+    }
+    .cam-btn:hover {
+      border-color: var(--cyan);
+      background: #0f172a;
+    }
+    .cam-btn.full { grid-column: span 2; }
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 0;
+      font-size: 0.82rem;
+    }
+    .toggle-row input[type="checkbox"] {
+      accent-color: var(--gold);
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+    .slider-box {
+      margin: 8px 0;
+    }
+    .slider-box label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      color: var(--cyan);
+      margin-bottom: 4px;
+    }
+    .slider-box input[type="range"] {
+      width: 100%;
+      accent-color: var(--cyan);
+      cursor: pointer;
+    }
+    /* Floating HUD Right */
+    .hud-right {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 320px;
+      background: var(--panel-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      z-index: 10;
+      max-height: calc(100vh - 95px);
+      overflow-y: auto;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.6);
+    }
+    .spec-card {
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid #334155;
+      border-left: 3px solid var(--gold);
+      border-radius: 6px;
+      padding: 9px 11px;
+      margin-bottom: 8px;
+    }
+    .spec-card h4 {
+      font-size: 0.82rem;
+      color: #fff;
+      margin-bottom: 3px;
+    }
+    .spec-card p {
+      font-size: 0.74rem;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .badge-white {
+      display: inline-block;
+      background: #f8fafc;
+      color: #0f172a;
+      font-weight: 700;
+      font-size: 0.68rem;
+      padding: 1px 6px;
+      border-radius: 4px;
+      margin-left: 4px;
+    }
+    /* Blender Renders Overlay Gallery */
+    #renders-gallery {
+      position: absolute;
+      inset: 0;
+      background: #070b12;
+      z-index: 15;
+      display: none;
+      overflow-y: auto;
+      padding: 24px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+      gap: 20px;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    .render-card {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+    .render-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: zoom-in;
+    }
+    .render-card-info {
+      padding: 14px 16px;
+    }
+    .render-card-info h3 {
+      font-size: 0.95rem;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+    .render-card-info p {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .bottom-help {
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid #334155;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.76rem;
+      color: #cbd5e1;
+      z-index: 10;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div>
+        <h1>🏯 VILLA AYAME — MAQUETA 3D INTERACTIVA + PISCINA INFINITA TERMAL + BLENDER 5.0</h1>
+        <span>Kamakurayama 2-Chome (505.44 m²) | Sumitomo Forestry Big Frame + RC Bunker | Piscina Infinita 38°C + 4 Autos JDM (Hilux GR Sport Negra)</span>
+      </div>
+    </div>
+    <div class="mode-tabs">
+      <button class="tab-btn active" onclick="switchTab('3d', this)">🧊 Maqueta 3D Interactiva (Tiempo Real)</button>
+      <button class="tab-btn" onclick="switchTab('blender', this)">📸 Renders Raytracing Blender 5.0 (OptiX)</button>
+      <button class="tab-btn" onclick="switchTab('cad', this)">📐 6 Láminas CAD 1:50 & 1:20</button>
+    </div>
+  </header>
+
+  <div id="main-area">
+    <div id="canvas-container"></div>
+
+    <!-- Left HUD: Controls -->
+    <div class="hud-left" id="hud-left">
+      <div class="hud-section-title">🎥 Cámaras Arquitectónicas</div>
+      <div class="btn-grid">
+        <button class="cam-btn full" onclick="setCameraView('iso')">🏠 Vista Maqueta Completa (Cutaway)</button>
+        <button class="cam-btn" onclick="setCameraView('b1f')">🏎️ Garaje B1F (Hilux Negra)</button>
+        <button class="cam-btn" onclick="setCameraView('skydeck')">🏊 Piscina Infinita & Fogata</button>
+        <button class="cam-btn" onclick="setCameraView('1f')">🛋️ Planta 1F (Gorogoro Pit)</button>
+        <button class="cam-btn" onclick="setCameraView('2f')">👘 Planta 2F (Atelier & Onsen)</button>
+        <button class="cam-btn" onclick="setCameraView('fuji')">🗻 Vista hacia Monte Fuji</button>
+        <button class="cam-btn" onclick="setCameraView('top')">📏 Vista Ortográfica Superior</button>
+      </div>
+
+      <div class="hud-section-title">💥 Vista Explosiva (Separar Pisos)</div>
+      <div class="slider-box">
+        <label>
+          <span>Separación Vertical de Plantas</span>
+          <span id="explode-val">0%</span>
+        </label>
+        <input type="range" id="explode-slider" min="0" max="100" value="0" oninput="updateExplode(this.value)" />
+      </div>
+
+      <div class="hud-section-title">👁️ Visibilidad de Capas (Colecciones)</div>
+      <div class="toggle-row">
+        <span>☀️ Techo Solar 14.5 kW (Roof)</span>
+        <input type="checkbox" id="chk-roof" checked onchange="updateLayers()" />
+      </div>
+      <div class="toggle-row">
+        <span>🛏️ Planta 2F (Suite, Atelier, Onsen, 4 Hijos)</span>
+        <input type="checkbox" id="chk-2f" checked onchange="updateLayers()" />
+      </div>
+      <div class="toggle-row">
+        <span>🔥 Planta 1F (Pit Living, Cocina 80cm, Sky-Deck)</span>
+        <input type="checkbox" id="chk-1f" checked onchange="updateLayers()" />
+      </div>
+      <div class="toggle-row">
+        <span>🏎️ Planta B1F (Garaje 4 Autos + Búnker)</span>
+        <input type="checkbox" id="chk-b1f" checked onchange="updateLayers()" />
+      </div>
+      <div class="toggle-row">
+        <span>🧱 Muros Exteriores (Cutaway Abierto)</span>
+        <input type="checkbox" id="chk-walls" checked onchange="updateLayers()" />
+      </div>
+      <div class="toggle-row">
+        <span>🏷️ Etiquetas 3D Flotantes</span>
+        <input type="checkbox" id="chk-labels" checked onchange="updateLayers()" />
+      </div>
+
+      <div class="hud-section-title">📦 Archivos Nativos 3D Generados</div>
+      <div style="font-size: 0.75rem; color: #cbd5e1; line-height: 1.45;">
+        <p style="margin-bottom:6px;">✅ <strong>Blender 5.0 (.blend):</strong><br/><code>Desktop\Villa_Ayame_Kamakurayama_Maqueta_3D.blend</code></p>
+        <p>✅ <strong>glTF 2.0 (.glb):</strong><br/><code>Villa_Ayame_Kamakurayama_Maqueta_3D.glb</code></p>
+      </div>
+    </div>
+
+    <!-- Right HUD: Specs & Legend -->
+    <div class="hud-right" id="hud-right">
+      <div class="hud-section-title">🏎️ Flota B1F (4 Autos en Escala 1:1)</div>
+      <div class="spec-card" style="border-left-color: #ef4444;">
+        <h4>Bahía 4: Toyota Hilux 2.4 Z GR Sport <span class="badge-white" style="background:#090d16;color:#f8fafc;border:1px solid #ef4444;">NEGRO #218</span></h4>
+        <p>5.32m × 1.90m | Lift 2" Off-Road | Pintura Attitude Black Mica, detalles GR rojos, barra deportiva y batea abierta sobre rejilla de lavado.</p>
+      </div>
+      <div class="spec-card" style="border-left-color: #ef4444;">
+        <h4>Bahía 3: Subaru BRZ / Toyota GR86</h4>
+        <p>Ignition Red | Bahía con elevador hidráulico de tijera empotrado en losa y banco de herramientas Snap-on.</p>
+      </div>
+      <div class="spec-card" style="border-left-color: #2563eb;">
+        <h4>Bahía 2: Subaru WRX S4 STI Sport R</h4>
+        <p>WR Blue Pearl | Rines BBS dorados + capó con toma de aire.</p>
+      </div>
+      <div class="spec-card" style="border-left-color: #64748b;">
+        <h4>Bahía 1: Toyota Vellfire Executive Lounge</h4>
+        <p>Black Metallic | 6 Asientos VIP familiares frente al ascensor privado.</p>
+      </div>
+
+      <div class="hud-section-title">🌸 Espacios Custom para あやめ</div>
+      <div class="spec-card" style="border-left-color: var(--pink);">
+        <h4>2F Atelier Idol (iLiFE!) & Pelucas</h4>
+        <p>Espejo Hollywood, 6 cabezas de maniquí para pelucas, vitrina de trajes idol y ranura de aspirado central <em>Wig Sweep</em>.</p>
+      </div>
+      <div class="spec-card" style="border-left-color: var(--gold);">
+        <h4>1F Cocina 80 cm + Gorogoro Pit (-35 cm)</h4>
+        <p>Isla calibrada a 800 mm para la estatura de あやめ (153 cm), sala hundida en nogal con chimenea y solárium para gatos senior.</p>
+      </div>
+      <div class="spec-card" style="border-left-color: var(--cyan);">
+        <h4>1F Sky-Deck Basalto + 2F Onsen Hinoki</h4>
+        <p>Fogatero circular sin humo bajo las estrellas con vistas a Enoshima (195° SSO) y Monte Fuji (262° OSO).</p>
+      </div>
+    </div>
+
+    <div class="bottom-help" id="bottom-help">
+      🖱️ <strong>Click Izquierdo + Arrastrar:</strong> Rotar Maqueta 3D &nbsp;|&nbsp; <strong>Rueda del Ratón:</strong> Zoom &nbsp;|&nbsp; <strong>Click Derecho + Arrastrar:</strong> Desplazar (Pan)
+    </div>
+
+    <!-- Gallery Tab for Blender Cycles Renders & CAD -->
+    <div id="renders-gallery"></div>
+  </div>
+
+  <!-- Three.js from CDN with automatic fallback -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script>
+    const BLENDER_RENDERS = [
+      {
+        src: 'villa_ayame_render_piscina_hilux_negra_1793095167406.jpg',
+        title: 'Render 8K — Piscina Infinita Climatizada (38°C) + Fogata + Toyota Hilux GR Sport NEGRA',
+        desc: 'Vista del Sky-Deck de basalto con la Piscina Infinita Climatizada (8.50m × 2.80m), el fogatero circular hundido y el garaje B1F abajo con el Vellfire Negro, WRX S4 Azul, GR86 Rojo y la Toyota Hilux GR Sport NEGRA (Attitude Black Mica #218) levantada 2 pulgadas.'
+      },
+      {
+        src: 'blender_render_01_maqueta_cutaway.png',
+        title: 'Render Blender 5.0 Cycles #1 — Maqueta Arquitectónica 3D Completa (Cutaway Dollhouse)',
+        desc: 'Renderizado por trazado de rayos GPU OptiX en Blender 5.0. Muestra simultáneamente el búnker B1F con los 4 autos (incluyendo la Toyota Hilux GR Sport NEGRA en la Bahía 4), la Planta 1F con el Sky-Deck, Piscina Infinita y fogata, y la Planta 2F con el Atelier Idol, Onsen Hinoki y las 4 habitaciones.'
+      },
+      {
+        src: 'blender_render_02_b1f_garaje_hilux_blanca.png',
+        title: 'Render Blender 5.0 Cycles #2 — Primer Plano Garaje B1F & Toyota Hilux GR Sport NEGRA',
+        desc: 'Detalle interior del garaje showroom B1F en Blender 5.0: Toyota Hilux 2.4 Z GR Sport en Negro Metálico (Attitude Black Mica #218) con detalles GR rojos sobre rejilla de drenaje, junto al GR86 Rojo sobre elevador hidráulico, WRX S4 Azul y Vellfire Negra.'
+      },
+      {
+        src: 'blender_render_03_planta_1f_maqueta.png',
+        title: 'Render Blender 5.0 Cycles #3 — Maqueta sin Techo: Planta 2F, Planta 1F, Piscina Infinita & Sky-Deck',
+        desc: 'Vista aérea de pájaro desde el Sur-Oeste mostrando la distribución interior en Blender: Gorogoro Pit Living hundido, Cocina de 80cm, Cat Sunroom, Sky-Deck con Piscina Infinita Climatizada y fogatero, Atelier Idol y Onsen de ciprés.'
+      },
+      {
+        src: 'blender_render_04_exterior_fuji_enoshima.png',
+        title: 'Render Blender 5.0 Cycles #4 — Vista Exterior hacia el Monte Fuji y Faro de Enoshima',
+        desc: 'Perspectiva desde el acantilado de Kamakurayama mostrando la residencia, la Piscina Infinita y la terraza de fogata en voladizo, el garaje B1F con la Hilux Negra y el horizonte con el Monte Fuji nevado al Oeste y Enoshima al Sur.'
+      }
+    ];
+
+    const CAD_SHEETS = [
+      {
+        src: 'plano_01_emplazamiento_y_seccion.png',
+        title: 'Lámina A-01 / S-01 — Emplazamiento Topográfico (505.44 m²), Piscina Infinita y Corte Sísmico',
+        desc: 'Lote NC_20993255 en Kamakurayama 2-Chome, Piscina Infinita Climatizada en el Sky-Deck, vectores visuales reales a Enoshima y Monte Fuji, y cimentación con 18 pilotes de acero a roca madre.'
+      },
+      {
+        src: 'plano_02_planta_b1f_garaje_y_bunker.png',
+        title: 'Lámina A-02 — Planta Arquitectónica B1F (1:50): Garaje 4 Autos (Hilux NEGRA) y Estudio Box-in-Box',
+        desc: 'Rampa anti-roce 7°, Vellfire Negra, WRX S4 Azul, GR86 Rojo, Toyota Hilux GR Sport NEGRA (Attitude Black Mica #218), Estudio -55dB y Bóveda Digimon PSA.'
+      },
+      {
+        src: 'plano_03_planta_1f_vida_y_skydeck.png',
+        title: 'Lámina A-03 — Planta Arquitectónica 1F (1:50): Piscina Infinita, Sky-Deck, Gorogoro Pit (-35cm) y Suite Hanare',
+        desc: 'Planta principal libre de columnas (Big Frame de Sumitomo Forestry), Piscina Infinita Climatizada (8.50m × 2.80m), Cat Sunroom con rampas 12° y Suite de Huéspedes Insonorizada Dr-45.'
+      },
+      {
+        src: 'plano_04_planta_2f_santuario_familiar.png',
+        title: 'Lámina A-04 — Planta Arquitectónica 2F (1:50): Master Suite, Atelier Idol, Onsen Hinoki y 4 Hijos',
+        desc: 'Santuario familiar superior con Atelier insonorizado de pelucas y trajes idol, baño de ciprés Hinoki con vista al Fuji y 4 recámaras infantiles.'
+      },
+      {
+        src: 'plano_05_instalaciones_mep_y_acustica.png',
+        title: 'Lámina M-01 / E-01 — Ingeniería MEP: Clima HEPA +15 Pa, Piso Radiante y Aspirado Central',
+        desc: 'Esquema de ingeniería mecánica, eléctrica, hidrónica, acústica Dr-55 y sustentabilidad solar 14.5 kW + 2 Powerwalls.'
+      },
+      {
+        src: 'plano_06_detalles_constructivos_custom.png',
+        title: 'Lámina D-01 — Detalles Constructivos Custom (1:20): Rampa, Cocina 153cm, Fogatero y Onsen',
+        desc: 'Secciones constructivas milimétricas hechas a medida para Bruno y あやめ.'
+      }
+    ];
+
+    function switchTab(mode, btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const gallery = document.getElementById('renders-gallery');
+      const hudL = document.getElementById('hud-left');
+      const hudR = document.getElementById('hud-right');
+      const help = document.getElementById('bottom-help');
+
+      if (mode === '3d') {
+        gallery.style.display = 'none';
+        hudL.style.display = 'block';
+        hudR.style.display = 'block';
+        help.style.display = 'block';
+      } else {
+        gallery.style.display = 'block';
+        hudL.style.display = 'none';
+        hudR.style.display = 'none';
+        help.style.display = 'none';
+        const items = mode === 'blender' ? BLENDER_RENDERS : CAD_SHEETS;
+        gallery.innerHTML = `<div class="gallery-grid">` + items.map(it => `
+          <div class="render-card">
+            <a href="${it.src}" target="_blank"><img src="${it.src}" alt="${it.title}" /></a>
+            <div class="render-card-info">
+              <h3>${it.title}</h3>
+              <p>${it.desc}</p>
+            </div>
+          </div>
+        `).join('') + `</div>`;
+      }
+    }
+
+    // ==================== THREE.JS INTERACTIVE 3D MAQUETTE ====================
+    const container = document.getElementById('canvas-container');
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x070b14);
+    scene.fog = new THREE.FogExp2(0x070b14, 0.0045);
+
+    const camera = new THREE.PerspectiveCamera(42, window.innerWidth / (window.innerHeight - 58), 0.1, 500);
+    camera.position.set(-22, 18, -24);
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight - 58);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    container.appendChild(renderer.domElement);
+
+    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.target.set(0, 3.2, -1.5);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.06;
+    controls.update();
+
+    // Lights
+    const ambientLight = new THREE.AmbientLight(0x94a3b8, 0.75);
+    scene.add(ambientLight);
+
+    const sunLight = new THREE.DirectionalLight(0xffedd5, 1.25);
+    sunLight.position.set(-28, 32, -25);
+    sunLight.castShadow = true;
+    sunLight.shadow.mapSize.width = 2048;
+    sunLight.shadow.mapSize.height = 2048;
+    scene.add(sunLight);
+
+    const fireLight = new THREE.PointLight(0xff6b00, 2.4, 14);
+    fireLight.position.set(-1.5, 4.4, -7.8);
+    scene.add(fireLight);
+
+    const garageLight = new THREE.PointLight(0xe0f2fe, 1.4, 18);
+    garageLight.position.set(-1.2, 2.8, -1.5);
+    scene.add(garageLight);
+
+    // Layer Groups
+    const grpTerrain = new THREE.Group();
+    const grpB1F = new THREE.Group();
+    const grp1F = new THREE.Group();
+    const grp2F = new THREE.Group();
+    const grpRoof = new THREE.Group();
+    const grpWalls = new THREE.Group();
+    scene.add(grpTerrain, grpB1F, grp1F, grp2F, grpRoof, grpWalls);
+
+    function addMesh(parent, geo, mat, x, y, z, rx=0, ry=0, rz=0) {
+      const m = new THREE.Mesh(geo, mat);
+      m.position.set(x, y, z);
+      m.rotation.set(rx, ry, rz);
+      m.castShadow = true;
+      m.receiveShadow = true;
+      parent.add(m);
+      return m;
+    }
+
+    function box(parent, w, h, d, mat, x, y, z, ry=0) {
+      return addMesh(parent, new THREE.BoxGeometry(w, h, d), mat, x, y, z, 0, ry, 0);
+    }
+
+    // Materials
+    const mGrass = new THREE.MeshStandardMaterial({ color: 0x14261c, roughness: 0.9 });
+    const mCliff = new THREE.MeshStandardMaterial({ color: 0x262930, roughness: 0.85 });
+    const mOcean = new THREE.MeshStandardMaterial({ color: 0x082f49, roughness: 0.2, metalness: 0.3 });
+    const mConcrete = new THREE.MeshStandardMaterial({ color: 0x64748b, roughness: 0.6 });
+    const mEpoxy = new THREE.MeshStandardMaterial({ color: 0x1e293b, roughness: 0.18, metalness: 0.25 });
+    const mWalnut = new THREE.MeshStandardMaterial({ color: 0x5c3a21, roughness: 0.38 });
+    const mHinoki = new THREE.MeshStandardMaterial({ color: 0xd4a359, roughness: 0.32 });
+    const mBasalt = new THREE.MeshStandardMaterial({ color: 0x1e242b, roughness: 0.55 });
+    const mTatami = new THREE.MeshStandardMaterial({ color: 0x849b69, roughness: 0.7 });
+    const mGlass = new THREE.MeshPhysicalMaterial({ color: 0x7dd3fc, transparent: true, opacity: 0.28, roughness: 0.05 });
+    const mWall = new THREE.MeshStandardMaterial({ color: 0xf1f5f9, roughness: 0.5 });
+    const mFire = new THREE.MeshBasicMaterial({ color: 0xff7b00 });
+    const mWater = new THREE.MeshStandardMaterial({ color: 0x38bdf8, roughness: 0.1, metalness: 0.2 });
+
+    // 1. Terrain + Sagami Bay + Mt Fuji + Enoshima
+    box(grpTerrain, 34, 4, 28, mGrass, 0, -2.1, 2);
+    box(grpTerrain, 34, 9, 14, mCliff, 0, -5.5, -13);
+    box(grpTerrain, 160, 0.5, 100, mOcean, 0, -9.8, -58);
+
+    // Mt. Fuji Cone in distance (West-Southwest)
+    const fujiCone = addMesh(grpTerrain, new THREE.ConeGeometry(22, 19, 32), new THREE.MeshStandardMaterial({ color: 0x1e293b, roughness: 0.8 }), -52, -1, -55);
+    const fujiSnow = addMesh(grpTerrain, new THREE.ConeGeometry(8.2, 7.2, 32), new THREE.MeshStandardMaterial({ color: 0xf8fafc, roughness: 0.3 }), -52, 5.0, -55);
+
+    // Enoshima Island & Sea Candle Lighthouse (South-Southwest)
+    addMesh(grpTerrain, new THREE.CylinderGeometry(5, 8, 4.5, 24), mGrass, 12, -7.5, -52);
+    addMesh(grpTerrain, new THREE.CylinderGeometry(0.35, 0.7, 5.5, 16), mWall, 12, -3.2, -52);
+    addMesh(grpTerrain, new THREE.SphereGeometry(0.8, 16, 16), new THREE.MeshBasicMaterial({ color: 0xfef08a }), 12, -0.2, -52);
+
+    // 2. B1F GARAGE & BUNKER (Y = 0 to 3.4)
+    box(grpB1F, 18.0, 0.35, 11.0, mConcrete, 0, -0.175, 0);
+    box(grpB1F, 12.6, 0.04, 8.2, mEpoxy, -1.2, 0.02, -0.5);
+    // Ramp
+    box(grpB1F, 4.5, 0.2, 6.5, mConcrete, 7.2, 0.1, 6.2);
+
+    // Helper to build detailed 3D Cars in Three.js
+    function build3DCar(parent, x, z, w, l, h, bodyHex, isPickup=false, isVan=false, goldWheels=false) {
+      const car = new THREE.Group();
+      car.position.set(x, 0.04, z);
+      const mBody = new THREE.MeshStandardMaterial({ color: bodyHex, roughness: 0.15, metalness: 0.45 });
+      const mTrim = new THREE.MeshStandardMaterial({ color: 0x111827, roughness: 0.5 });
+      const mWin = new THREE.MeshStandardMaterial({ color: 0x0f172a, roughness: 0.1, metalness: 0.8 });
+      const mRim = new THREE.MeshStandardMaterial({ color: goldWheels ? 0xeab308 : 0x94a3b8, metalness: 0.8, roughness: 0.25 });
+      const mLight = new THREE.MeshBasicMaterial({ color: 0xe0f2fe });
+      const mTail = new THREE.MeshBasicMaterial({ color: 0xef4444 });
+
+      const lift = isPickup ? 0.18 : 0;
+      // Lower chassis
+      box(car, w, h * 0.46, l, mBody, 0, lift + h * 0.36, 0);
+
+      if (isPickup) {
+        // Double cab + open pickup bed + black GR fender flares + sports bar
+        box(car, w * 0.90, h * 0.42, l * 0.46, mBody, 0, lift + h * 0.76, l * 0.06);
+        box(car, w * 0.92, h * 0.30, l * 0.42, mWin, 0, lift + h * 0.76, l * 0.06);
+        // Black bed liner
+        box(car, w * 0.86, h * 0.16, l * 0.36, mTrim, 0, lift + h * 0.52, -l * 0.30);
+        // Black GR Sport Fender Flares & Grille
+        box(car, w * 1.05, h * 0.20, l * 0.22, mTrim, 0, lift + h * 0.26, l * 0.32);
+        box(car, w * 1.05, h * 0.20, l * 0.22, mTrim, 0, lift + h * 0.26, -l * 0.30);
+        box(car, w * 0.72, h * 0.22, 0.08, mTrim, 0, lift + h * 0.38, l * 0.50);
+        // Roll bar
+        box(car, w * 0.84, 0.07, 0.07, mTrim, 0, lift + h * 0.96, -l * 0.14);
+      } else if (isVan) {
+        box(car, w * 0.95, h * 0.50, l * 0.80, mBody, 0, h * 0.74, -l * 0.03);
+        box(car, w * 0.97, h * 0.32, l * 0.74, mWin, 0, h * 0.76, -l * 0.03);
+      } else {
+        box(car, w * 0.86, h * 0.40, l * 0.50, mBody, 0, h * 0.70, -l * 0.04);
+        box(car, w * 0.88, h * 0.28, l * 0.46, mWin, 0, h * 0.71, -l * 0.04);
+        // Rear spoiler
+        box(car, w * 0.82, 0.05, 0.22, mBody, 0, h * 0.64, -l * 0.44);
+      }
+
+      // Headlights & Taillights
+      box(car, w * 0.24, 0.09, 0.06, mLight, -w * 0.32, lift + h * 0.40, l * 0.50);
+      box(car, w * 0.24, 0.09, 0.06, mLight, w * 0.32, lift + h * 0.40, l * 0.50);
+      box(car, w * 0.24, 0.09, 0.06, mTail, -w * 0.32, lift + h * 0.42, -l * 0.50);
+      box(car, w * 0.24, 0.09, 0.06, mTail, w * 0.32, lift + h * 0.42, -l * 0.50);
+
+      // 4 Wheels
+      const wheelR = isPickup ? 0.42 : 0.33;
+      const wheelGeo = new THREE.CylinderGeometry(wheelR, wheelR, 0.26, 20);
+      wheelGeo.rotateZ(Math.PI / 2);
+      [[-w*0.48, l*0.32], [w*0.48, l*0.32], [-w*0.48, -l*0.32], [w*0.48, -l*0.32]].forEach(([wx, wz]) => {
+        addMesh(car, wheelGeo, mTrim, wx, wheelR, wz);
+        const rimGeo = new THREE.CylinderGeometry(wheelR*0.62, wheelR*0.62, 0.28, 16);
+        rimGeo.rotateZ(Math.PI / 2);
+        addMesh(car, rimGeo, mRim, wx, wheelR, wz);
+      });
+
+      parent.add(car);
+    }
+
+    // 4 JDM Vehicles in B1F
+    build3DCar(grpB1F, 3.0, -0.5, 1.85, 4.95, 1.88, 0x0f172a, false, true, false);  // Bay 1: Black Vellfire
+    build3DCar(grpB1F, 0.2, -0.5, 1.82, 4.67, 1.46, 0x1d4ed8, false, false, true);  // Bay 2: WR Blue WRX S4
+    build3DCar(grpB1F, -2.6, -0.5, 1.77, 4.26, 1.31, 0xdc2626, false, false, false); // Bay 3: Red GR86
+    build3DCar(grpB1F, -5.6, -0.5, 1.90, 5.32, 1.86, 0x090d16, true, false, false);  // Bay 4: JET BLACK TOYOTA HILUX GR SPORT
+
+    // Scissor lift under Red GR86 & Wash grate under Black Hilux
+    box(grpB1F, 1.5, 0.06, 3.4, new THREE.MeshStandardMaterial({color:0xdc2626}), -2.6, 0.05, -0.5);
+    box(grpB1F, 2.3, 0.03, 5.8, mConcrete, -5.6, 0.04, -0.5);
+
+    // Box-in-Box Studio & Digimon Vault in B1F East
+    box(grpB1F, 0.25, 3.2, 8.5, mConcrete, 5.2, 1.6, -0.5);
+    box(grpB1F, 2.2, 0.75, 0.9, mWalnut, 7.1, 0.4, -2.8); // Streaming desk
+    box(grpB1F, 0.55, 0.42, 0.06, new THREE.MeshBasicMaterial({color:0x38bdf8}), 6.7, 1.05, -3.0);
+    box(grpB1F, 0.55, 0.42, 0.06, new THREE.MeshBasicMaterial({color:0xa855f7}), 7.4, 1.05, -3.0);
+    box(grpB1F, 0.35, 2.2, 3.6, new THREE.MeshBasicMaterial({color:0xfef08a}), 8.6, 1.2, 1.5); // Digimon PSA Vault
+
+    // 3. 1F MAIN FLOOR + SKY-DECK + HEATED INFINITY POOL (Base Y = 3.4)
+    box(grp1F, 18.0, 0.30, 10.6, mWalnut, 0, 3.55, 0.2);
+    // Sky-Deck Cantilever South (Negative Z)
+    box(grp1F, 14.5, 0.28, 4.6, mBasalt, -1.2, 3.54, -7.4);
+    // Glass balustrade around Sky-Deck
+    box(grp1F, 8.5, 1.05, 0.06, mGlass, 1.8, 4.15, -9.65);
+    box(grp1F, 0.06, 1.05, 4.6, mGlass, 6.02, 4.15, -7.4);
+
+    // Heated Cliffside Infinity Pool on Sky-Deck West (x = -8.2 to -2.4, z = -9.6 to -6.0)
+    box(grp1F, 5.8, 0.55, 3.6, mBasalt, -5.4, 3.65, -7.8);
+    box(grp1F, 5.4, 0.45, 3.2, mWater, -5.4, 3.74, -7.8);
+    box(grp1F, 1.5, 0.22, 3.1, mBasalt, -3.4, 3.82, -7.8); // 30cm Baja Shelf
+
+    // Fire Pit on Sky-Deck (Next to Infinity Pool!)
+    addMesh(grp1F, new THREE.CylinderGeometry(1.15, 1.15, 0.36, 28), mBasalt, 0.8, 3.85, -7.6);
+    const flameMesh = addMesh(grp1F, new THREE.ConeGeometry(0.55, 0.75, 16), mFire, 0.8, 4.25, -7.6);
+    // Outdoor L-sofa around Fire Pit
+    box(grp1F, 3.2, 0.55, 0.9, mWall, 0.8, 3.9, -5.8);
+    box(grp1F, 0.9, 0.55, 2.4, mWall, 2.5, 3.9, -6.9);
+
+    // Sunken Gorogoro Pit Living
+    box(grp1F, 4.6, 0.12, 3.8, mHinoki, -1.5, 3.66, -1.5);
+    box(grp1F, 3.8, 0.55, 0.85, mWall, -1.5, 3.95, 0.1);
+    box(grp1F, 0.85, 0.55, 3.2, mWall, -3.4, 3.95, -1.5);
+    // Fireplace
+    box(grp1F, 1.5, 2.8, 0.7, mBasalt, -5.2, 5.1, -1.5);
+    box(grp1F, 0.9, 0.5, 0.75, mFire, -5.2, 4.3, -1.5);
+
+    // Custom 80cm Kitchen Island & Dining Table
+    box(grp1F, 2.9, 0.80, 1.15, mWall, 3.2, 4.1, -1.2);
+    box(grp1F, 2.5, 0.74, 1.05, mWalnut, 3.2, 4.07, -3.2);
+
+    // Senior Cat Sunroom (SW Corner)
+    box(grp1F, 3.0, 0.08, 3.2, mHinoki, -6.8, 3.74, -3.2);
+    addMesh(grp1F, new THREE.CylinderGeometry(0.28, 0.28, 1.8, 16), mHinoki, -7.2, 4.6, -3.8);
+
+    // 9-Mat Tatami Room (NE Corner)
+    box(grp1F, 4.4, 0.08, 4.0, mTatami, 5.8, 3.74, 2.6);
+
+    // 10m Southern Window Wall
+    box(grp1F, 13.5, 2.9, 0.08, mGlass, -1.2, 5.15, -5.05);
+
+    // 4. 2F FAMILY SANCTUARY (Base Y = 6.6)
+    box(grp2F, 17.2, 0.28, 9.8, mWalnut, 0, 6.74, 0.4);
+    // Master Bed
+    box(grp2F, 2.1, 0.52, 2.2, mWall, -5.6, 7.1, -1.6);
+    // Ayame's Idol & Wig Atelier (Center-South)
+    box(grp2F, 2.6, 0.76, 0.7, mWall, -1.2, 7.2, -3.2);
+    for (let i = 0; i < 5; i++) {
+      addMesh(grp2F, new THREE.SphereGeometry(0.16, 12, 12), new THREE.MeshStandardMaterial({color: 0xf472b6}), -2.0 + i * 0.4, 7.75, -3.2);
+    }
+    // Hinoki Cypress Onsen Bath (West Cliff Edge facing Mt. Fuji)
+    box(grp2F, 2.2, 0.68, 1.6, mHinoki, -7.2, 7.18, -3.0);
+    box(grp2F, 1.9, 0.58, 1.3, mWater, -7.2, 7.26, -3.0);
+
+    // 4 Kids Bedrooms (East & North)
+    const kidColors = [0x38bdf8, 0x4ade80, 0xfbbf24, 0xc084fc];
+    [[2.4, -2.0], [5.8, -2.0], [2.4, 2.6], [5.8, 2.6]].forEach(([kx, kz], idx) => {
+      box(grp2F, 1.2, 0.45, 1.9, new THREE.MeshStandardMaterial({color: kidColors[idx]}), kx, 7.08, kz);
+    });
+
+    // 2F South Glass Wall & Balcony
+    box(grp2F, 16.5, 2.7, 0.08, mGlass, 0, 8.2, -4.45);
+
+    // 5. ROOF & 14.5 kW SOLAR ARRAY (Base Y = 9.6)
+    box(grpRoof, 18.8, 0.38, 11.4, mWalnut, 0, 9.75, 0.4);
+    const mSolar = new THREE.MeshStandardMaterial({ color: 0x0f172a, metalness: 0.7, roughness: 0.15 });
+    for (let r = 0; r < 3; r++) {
+      for (let c = 0; c < 6; c++) {
+        box(grpRoof, 2.2, 0.06, 1.3, mSolar, -6.2 + c * 2.5, 10.0, -2.2 + r * 2.2);
+      }
+    }
+
+    // 6. CUTAWAY EXTERIOR WALLS (North & East)
+    box(grpWalls, 18.0, 9.6, 0.32, mWall, 0, 4.8, 5.4);
+    box(grpWalls, 0.32, 9.6, 10.8, mWall, 8.85, 4.8, 0.1);
+
+    // Explode & Layer Controls
+    function updateExplode(val) {
+      document.getElementById('explode-val').innerText = val + '%';
+      const factor = parseFloat(val) / 100.0;
+      grpB1F.position.y = 0;
+      grp1F.position.y = factor * 4.2;
+      grp2F.position.y = factor * 8.8;
+      grpRoof.position.y = factor * 13.5;
+    }
+
+    function updateLayers() {
+      grpRoof.visible = document.getElementById('chk-roof').checked;
+      grp2F.visible = document.getElementById('chk-2f').checked;
+      grp1F.visible = document.getElementById('chk-1f').checked;
+      grpB1F.visible = document.getElementById('chk-b1f').checked;
+      grpWalls.visible = document.getElementById('chk-walls').checked;
+    }
+
+    function setCameraView(preset) {
+      if (preset === 'iso') {
+        camera.position.set(-22, 18, -24);
+        controls.target.set(0, 3.2, -1.5);
+      } else if (preset === 'b1f') {
+        document.getElementById('chk-roof').checked = false;
+        document.getElementById('chk-2f').checked = false;
+        document.getElementById('chk-1f').checked = false;
+        updateLayers();
+        camera.position.set(-10, 6.5, -11);
+        controls.target.set(-2.5, 0.8, -0.5);
+      } else if (preset === 'skydeck') {
+        document.getElementById('chk-1f').checked = true;
+        updateLayers();
+        camera.position.set(-8, 6.2, -15);
+        controls.target.set(-1.5, 4.0, -7.2);
+      } else if (preset === '1f') {
+        document.getElementById('chk-roof').checked = false;
+        document.getElementById('chk-2f').checked = false;
+        document.getElementById('chk-1f').checked = true;
+        updateLayers();
+        camera.position.set(-8, 14, -12);
+        controls.target.set(0, 3.8, -1.5);
+      } else if (preset === '2f') {
+        document.getElementById('chk-roof').checked = false;
+        document.getElementById('chk-2f').checked = true;
+        updateLayers();
+        camera.position.set(-9, 16, -11);
+        controls.target.set(-1.5, 7.0, -1.5);
+      } else if (preset === 'fuji') {
+        camera.position.set(12, 8.5, 6);
+        controls.target.set(-25, 2.0, -30);
+      } else if (preset === 'top') {
+        document.getElementById('chk-roof').checked = false;
+        updateLayers();
+        camera.position.set(0, 28, -1.5);
+        controls.target.set(0, 3.5, -1.5);
+      }
+      controls.update();
+    }
+
+    // Animation Loop
+    let clock = new THREE.Clock();
+    function animate() {
+      requestAnimationFrame(animate);
+      const t = clock.getElapsedTime();
+      flameMesh.scale.y = 0.85 + Math.sin(t * 9) * 0.22;
+      fireLight.intensity = 2.1 + Math.sin(t * 11) * 0.45;
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / (window.innerHeight - 58);
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight - 58);
+    });
+  </script>
+</body>
+</html>

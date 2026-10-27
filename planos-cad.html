@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VILLA AYAME — Visor Interactivo de Planos CAD y Renders 8K (Kamakurayama 2-Chome)</title>
+  <style>
+    :root {
+      --bg: #070d17;
+      --panel: #0f172a;
+      --border: #1e293b;
+      --gold: #f59e0b;
+      --cyan: #38bdf8;
+      --rose: #f43f5e;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Yu Gothic', 'Meiryo', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, #050911 0%, #111c2d 50%, #050911 100%);
+      border-bottom: 2px solid var(--gold);
+      padding: 16px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    header h1 {
+      font-size: 1.35rem;
+      color: var(--gold);
+      letter-spacing: 0.5px;
+    }
+    header p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .badge-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      background: #1e293b;
+      border: 1px solid var(--cyan);
+      color: var(--cyan);
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+    .badge.gold { border-color: var(--gold); color: var(--gold); }
+    .badge.rose { border-color: var(--rose); color: var(--rose); }
+    .main-layout {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      flex: 1;
+      min-height: calc(100vh - 80px);
+    }
+    aside {
+      background: var(--panel);
+      border-right: 1px solid var(--border);
+      padding: 18px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .section-title {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--gold);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+    .nav-btn {
+      width: 100%;
+      text-align: left;
+      background: #162234;
+      border: 1px solid #263854;
+      color: var(--text);
+      padding: 10px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      margin-bottom: 6px;
+    }
+    .nav-btn:hover, .nav-btn.active {
+      background: #1e2f48;
+      border-color: var(--gold);
+      box-shadow: 0 0 12px rgba(245, 158, 11, 0.25);
+    }
+    .nav-btn strong {
+      display: block;
+      font-size: 0.86rem;
+      color: var(--gold);
+    }
+    .nav-btn span {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    .viewer {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      gap: 16px;
+      overflow-y: auto;
+    }
+    .canvas-box {
+      background: #050911;
+      border: 1px solid var(--gold);
+      border-radius: 12px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .canvas-box img {
+      max-width: 100%;
+      max-height: 74vh;
+      border-radius: 8px;
+      object-fit: contain;
+      cursor: zoom-in;
+      transition: transform 0.25s ease;
+    }
+    .canvas-box img.zoomed {
+      max-width: none;
+      max-height: none;
+      width: 165%;
+      cursor: zoom-out;
+    }
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .spec-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--cyan);
+      padding: 12px 14px;
+      border-radius: 8px;
+    }
+    .spec-card h4 {
+      font-size: 0.85rem;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+    .spec-card p {
+      font-size: 0.78rem;
+      color: var(--text);
+      line-height: 1.45;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>🏛️ VILLA AYAME — KAMAKURAYAMA 2-CHOME (鎌倉山二丁目邸 新築実施設計)</h1>
+      <p>Terreno Real SUUMO nc_20993255: 505.44 m² (152.89坪) | Búnker RC造 (B1F) + 住友林業 Big Frame (1F–2F) | Construido Total: 500.0 m² + 149.0 m² Terrazas</p>
+    </div>
+    <div class="badge-row">
+      <span class="badge gold">Terreno: ¥190M ($1.26M USD)</span>
+      <span class="badge">Mansión + Piscina Infinita: ¥464.5M ($3.09M USD)</span>
+      <span class="badge rose">Hilux GR Sport: NEGRA (#218)</span>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    <aside>
+      <div>
+        <div class="section-title">📐 Planos Técnicos CAD (6 Hojas)</div>
+        <button class="nav-btn active" onclick="showSlide(0, this)">
+          <strong>HOJA 01/06: Emplazamiento, Piscina y Corte</strong>
+          <span>Polígono 505.44 m² + Piscina Infinita + Pilotes</span>
+        </button>
+        <button class="nav-btn" onclick="showSlide(1, this)">
+          <strong>HOJA 02/06: Planta B1F (Garaje + Búnker)</strong>
+          <span>Vellfire + WRX + GR86 + Hilux NEGRA + Studio -55dB</span>
+        </button>
+        <button class="nav-btn" onclick="showSlide(2, this)">
+          <strong>HOJA 03/06: Planta 1F (Piscina + Sky-Deck)</strong>
+          <span>Piscina Infinita 38°C + Gorogoro + Suite Hanare Dr-45</span>
+        </button>
+        <button class="nav-btn" onclick="showSlide(3, this)">
+          <strong>HOJA 04/06: Planta 2F (Santuario Familiar)</strong>
+          <span>Master Suite + Atelier Pelucas + Onsen + 4 Hijos</span>
+        </button>
+        <button class="nav-btn" onclick="showSlide(4, this)">
+          <strong>HOJA 05/06: Ingeniería MEP y Acústica</strong>
+          <span>Clima HEPA + Bomba Piscina + Aspiración Pelucas</span>
+        </button>
+        <button class="nav-btn" onclick="showSlide(5, this)">
+          <strong>HOJA 06/06: Detalles Constructivos 1:20</strong>
+          <span>Rampa 7° (Hilux Negra) + Piscina Infinita + Cocina 80cm</span>
+        </button>
+      </div>
+
+      <div>
+        <div class="section-title">🧊 Planos 3D Cutaway y Renders 8K</div>
+        <button class="nav-btn" onclick="showSlide(6, this)">
+          <strong>RENDER 8K: Piscina Infinita + Hilux NEGRA</strong>
+          <span>Piscina 38°C + Fogata + Hilux GR Sport Negra en B1F</span>
+        </button>
+        <button class="nav-btn" onclick="showSlide(7, this)">
+          <strong>CORTE 3D ISOMÉTRICO (3 Niveles)</strong>
+          <span>Vista Dollhouse completa con Monte Fuji y 4 Autos</span>
+        </button>
+        <button class="nav-btn" onclick="showSlide(8, this)">
+          <strong>PLANTA 3D B1F: Garaje y Studio Box-in-Box</strong>
+          <span>Vista ortográfica superior con batea y drenaje</span>
+        </button>
+        <button class="nav-btn" onclick="showSlide(9, this)">
+          <strong>PLANTAS 3D 1F & 2F: Vida, Atelier y Onsen</strong>
+          <span>Díptico 3D con mobiliario a escala real</span>
+        </button>
+        <button class="nav-btn" onclick="showSlide(10, this)">
+          <strong>RENDER 8K: Noche de Estrellas y Fogata</strong>
+          <span>Sky-Deck con あやめ mirando Enoshima y Fuji</span>
+        </button>
+        <button class="nav-btn" onclick="showSlide(11, this)">
+          <strong>RENDER 8K: Salón Gorogoro y Solárium Gatos</strong>
+          <span>Madera de nogal Sumitomo Forestry + Chimenea</span>
+        </button>
+        <button class="nav-btn" onclick="showSlide(12, this)">
+          <strong>RENDER 8K: Atelier de Pelucas y Onsen Hinoki</strong>
+          <span>Vestidos Idol iLiFE! + Tina frente al Monte Fuji</span>
+        </button>
+        <button class="nav-btn" onclick="showSlide(13, this)">
+          <strong>RENDER 8K: Garaje B1F y Bóveda Digimon</strong>
+          <span>Los 4 vehículos JDM + Estudio insonorizado</span>
+        </button>
+      <div>
+        <div class="section-title">🟠 Maqueta 3D Blender 5.0 (Cycles OptiX)</div>
+        <a href="visor_3d_interactivo_villa_ayame.html" style="display:block; text-decoration:none; background:#f59e0b; color:#050911; font-weight:800; padding:10px 12px; border-radius:8px; text-align:center; margin-bottom:8px; font-size:0.84rem;">
+          🧊 ABRIR MAQUETA 3D INTERACTIVA (360°)
+        </a>
+        <button class="nav-btn" onclick="showSlide(14, this)">
+          <strong>BLENDER #1: Maqueta Cutaway + Piscina</strong>
+          <span>Cycles OptiX GPU + Piscina Infinita + Hilux Negra</span>
+        </button>
+        <button class="nav-btn" onclick="showSlide(15, this)">
+          <strong>BLENDER #2: Garaje B1F + Hilux NEGRA</strong>
+          <span>Hilux GR Sport Negra (#218) en Blender 5.0 + Fuji</span>
+        </button>
+        <button class="nav-btn" onclick="showSlide(16, this)">
+          <strong>BLENDER #3: Planta 1F, Piscina & Sky-Deck</strong>
+          <span>Vista aérea sin techo con Piscina Infinita y Fogata</span>
+        </button>
+        <button class="nav-btn" onclick="showSlide(17, this)">
+          <strong>BLENDER #4: Exterior Mansión + Piscina + Fuji</strong>
+          <span>Mansión completa con Piscina Infinita y Hilux Negra</span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="viewer">
+      <div class="canvas-box">
+        <img id="main-img" src="plano_01_emplazamiento_y_seccion.png" alt="Plano Villa Ayame" onclick="this.classList.toggle('zoomed')" title="Haz clic para hacer Zoom 165%" />
+      </div>
+
+      <div class="spec-grid">
+        <div class="spec-card">
+          <h4>🛻 Bahía 4: Toyota Hilux Z GR Sport NEGRA (#218)</h4>
+          <p>Dimensiones 5.32m × 1.90m con Lift JAOS de 2", color Negro Metálico (Attitude Black Mica #218), detalles GR rojos, batea abierta y rejilla perimetral de lavado a presión.</p>
+        </div>
+        <div class="spec-card">
+          <h4>🏊‍♀️ Piscina Infinita Climatizada (8.50m × 2.80m)</h4>
+          <p>Integrada en el ala Oeste del Sky-Deck junto al fogatero circular: agua a 38°C todo el año, Baja Shelf de 30cm y profundidad de 1.15m ideal para la estatura de あやめ (153cm).</p>
+        </div>
+        <div class="spec-card">
+          <h4>👗 Atelier Secreto de Pelucas (Aspiración en Zócalo)</h4>
+          <p>Equipa una bocatoma de vacío central (吸引スイープインレット) al ras del piso bajo el tocador Hollywood: succiona los cabellos de peluca cortados sin barrer.</p>
+        </div>
+        <div class="spec-card">
+          <h4>🎙️ Búnker Streaming Box-in-Box (-55 dB)</h4>
+          <p>Aislamiento Dr-55 con doble muro flotante, esclusa de doble puerta y losa de 300mm. Bruno puede gritar en stream a las 3 AM con &lt;25 dB en la suite de あやめ.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const slides = [
+      "plano_01_emplazamiento_y_seccion.png",
+      "plano_02_planta_b1f_garaje_y_bunker.png",
+      "plano_03_planta_1f_vida_y_skydeck.png",
+      "plano_04_planta_2f_santuario_familiar.png",
+      "plano_05_instalaciones_mep_y_acustica.png",
+      "plano_06_detalles_constructivos_custom.png",
+      "villa_ayame_render_piscina_hilux_negra_1793095167406.jpg",
+      "villa_ayame_render_planos_3d_cutaway_1793092033192.jpg",
+      "villa_ayame_render_planta_b1f_detallada_1793092051261.jpg",
+      "villa_ayame_render_planta_1f_2f_detallada_1793092074437.jpg",
+      "villa_ayame_render_exterior_noche_1793091245167.jpg",
+      "villa_ayame_render_interior_gorogoro_1793091273898.jpg",
+      "villa_ayame_render_atelier_onsen_png_1793091250735.jpg",
+      "villa_ayame_render_garaje_b1f_png_1793091267398.jpg",
+      "blender_render_01_maqueta_cutaway.png",
+      "blender_render_02_b1f_garaje_hilux_blanca.png",
+      "blender_render_03_planta_1f_maqueta.png",
+      "blender_render_04_exterior_fuji_enoshima.png"
+    ];
+    function showSlide(idx, btn) {
+      const img = document.getElementById("main-img");
+      img.classList.remove("zoomed");
+      img.src = slides[idx];
+      document.querySelectorAll(".nav-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+    }
+  </script>
+</body>
+</html>
