@@ -1,0 +1,1145 @@
+{
+  "api_version": "2.4.0",
+  "total_images": 40,
+  "camera_standard": "Phase One IQ4 150MP + Rodenstock HR Digaron-S 23mm f/5.6 Tilt-Shift",
+  "houses": {
+    "kamakura": [
+      {
+        "num": "01 / 10",
+        "code": "KAM-IMG-01",
+        "file": "./assets/img/kamakura_01_exterior_night.jpg",
+        "title": "Fachada Sur en Voladizo sobre el Acantilado · Fusión SHAWOOD & Big Frame",
+        "zone": "Exterior Sur · Niveles B1F + 1F + 2F",
+        "area": "505.44 m² (152.89 坪) Terreno · 418.50 m² (126.59 坪) Construidos",
+        "total_jpy": 243000000,
+        "desc": "Arquitectura Japanese Quiet Luxury anclada con 18 pilotes de acero a la roca madre (-12.5m) de Kamakurayama. Combina columnas estructurales Sumitomo Big Frame (560mm) y herrajes sísmicos Sekisui House SHAWOOD para lograr un voladizo libre de 3.2 metros sin columnas intermedias. Aleros profundos de cedro rojo (1.8m) con iluminación lineal indirecta 2700K que enmarcan el Monte Fuji (265° W) y la Isla Enoshima (205° SSW).",
+        "items": [
+          [
+            "Superestructura BF-構法 + SHAWOOD Grado Sísmico 3+",
+            "¥165,000,000",
+            "$1,045,000"
+          ],
+          [
+            "18 Pilotes Acero Φ400mm a Roca Madre (-12.5m) + Búnker RC",
+            "¥38,500,000",
+            "$243,800"
+          ],
+          [
+            "Ventanales Piso-Techo YKK AP APW 430 Triple Low-E Argón",
+            "¥19,800,000",
+            "$125,400"
+          ],
+          [
+            "Iluminación Arquitectónica Exterior 2700K Lutron HomeWorks",
+            "¥6,400,000",
+            "$40,500"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP digital back, Rodenstock HR Digaron-S 23mm f/5.6 tilt-shift lens, ISO 50, f/8, 2-second twilight exposure. Ultra-luxury modern Japanese cliffside residence in Kamakurayama, Japan by Sumitomo Forestry (Big Frame) and Sekisui House (SHAWOOD). Exposed architectural board-formed concrete B1F bunker base, cantilevered 1F basalt terrace with glowing 38°C infinity pool, warm red cedar soffits with recessed 2700K LED linear lighting, floor-to-ceiling low-iron glass walls overlooking Sagami Bay, Enoshima island lighthouse, and Mount Fuji silhouette at blue hour. Zero people, photorealistic Casa Brutus editorial photography."
+      },
+      {
+        "num": "02 / 10",
+        "code": "KAM-IMG-02",
+        "file": "./assets/img/kamakura_02_skydeck_hilux.jpg",
+        "title": "Sky-Deck en Voladizo, Piscina Infinita 38°C & Búnker Hilux Negra (#218)",
+        "zone": "1F Sky-Deck Sur + B1F Rampa Láser 7°",
+        "area": "85.0 m² (25.71 坪) Terraza + 23.8 m² Piscina",
+        "total_jpy": 31200000,
+        "desc": "Corte perspectivo entre la terraza en voladizo revestida en basalto negro flameado antideslizante (con piscina infinita climatizada a 38°C y fogatero circular de gas ciudad sin humo) y el acceso inferior por rampa de transición parabólica (7° máx.) donde descansa la Toyota Hilux Z GR Sport Negra (#218 Attitude Black Mica).",
+        "items": [
+          [
+            "Piscina Infinita 8.50m×2.80m + Panel Acrílico Nippura 50mm",
+            "¥18,500,000",
+            "$117,100"
+          ],
+          [
+            "Toyota Hilux Z GR Sport 4x4 Negra (#218 Attitude Black)",
+            "¥4,650,000",
+            "$29,400"
+          ],
+          [
+            " Terraza Basalto Flameado 85 m² + Barandales Cristal Templado",
+            "¥4,650,000",
+            "$29,400"
+          ],
+          [
+            "Fogatero Hundido Gas Ciudad + Lounge Exterior Paola Lenti",
+            "¥3,400,000",
+            "$21,500"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50, golden hour sunset over Sagami Bay. Architectural two-level exterior view of Villa Ayame Kamakurayama: upper cantilevered black basalt Sky-Deck featuring a steaming 8.5m heated infinity pool with 50mm acrylic edge and sunken gas fire pit facing Mount Fuji; lower level showing a precision 7-degree brushed concrete ramp leading into an industrial luxury showroom garage where a Matte-Black (#218) Toyota Hilux GR Sport pickup is parked under geometric linear LED lights. Zero people, photorealistic."
+      },
+      {
+        "num": "03 / 10",
+        "code": "KAM-IMG-03",
+        "file": "./assets/img/kamakura_03_gorogoro_living.jpg",
+        "title": "Salón Hundido «Gorogoro Pit» (-35 cm), Cocina 80.0 cm & Solárium de Gatos",
+        "zone": "Planta Principal 1F · Gran Claro Sin Columnas (9.5m)",
+        "area": "98.0 m² (29.64 坪) Gran Salón + 16.0 m² Solárium Gatos",
+        "total_jpy": 21600000,
+        "desc": "Gracias a las vigas híbridas Big Frame, el salón principal ofrece un claro libre de 9.5 metros sin columnas. El centro es el Gorogoro Pit hundido 35 cm con piso radiante hidrónico y tapicería Ultrasuede Toray (anti-rasguños para los 3 gatos senior), integrado a la cocina de nogal a 80.0 cm de altura para あやめ (153 cm) y al solárium acristalado con rampas suaves de 12°.",
+        "items": [
+          [
+            "Sofá Modular Gorogoro Pit (-35cm) Minotti / Toray Ultrasuede",
+            "¥4,600,000",
+            "$29,100"
+          ],
+          [
+            "Cocina Nogal & Cuarzo Marquina a 80.0 cm (Takara + Blum)",
+            "¥6,800,000",
+            "$43,000"
+          ],
+          [
+            "Mesa Nogal 10 Personas + 10 Sillas Maruni Hiroshima",
+            "¥2,950,000",
+            "$18,700"
+          ],
+          [
+            "Solárium Gatos Senior (Rampas 12°, Corcho Térmico, 4 Areneros HEPA)",
+            "¥2,800,000",
+            "$17,700"
+          ],
+          [
+            "TV LG Signature OLED M 97\" + Audio Invisible B&W Atmos",
+            "¥4,450,000",
+            "$28,200"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50, warm late afternoon sunlight. Interior of Villa Ayame Kamakurayama 1F Great Room by Sumitomo Forestry: 9.5-meter column-free span with American black walnut floors, a sunken -35cm 'Gorogoro' conversation pit with plush charcoal pet-proof velvet sofas, a bespoke 80.0 cm ergonomic walnut and black Marquina quartz kitchen island in the background, and a glass-enclosed sunny cat atrium on the right with gentle 12-degree wooden ramps where three senior cats nap peacefully. Mount Fuji visible through floor-to-ceiling glass. Zero people."
+      },
+      {
+        "num": "04 / 10",
+        "code": "KAM-IMG-04",
+        "file": "./assets/img/kamakura_04_mega_parrilla.jpg",
+        "title": "Mega Parrilla Exterior Wagyu A5 & Cocina Chef 80.0 cm Integrada",
+        "zone": "1F Ala Este + Terraza Cubierta de Asados",
+        "area": "36.0 m² Cocina Interior + 22.0 m² Terraza BBQ (17.54 坪)",
+        "total_jpy": 17350000,
+        "desc": "Puertas corredizas de cristal YKK AP desaparecen en el muro para unir la cocina interior de 80.0 cm de あやめ (equipada con hornos Gaggenau Serie 400 y refrigeración Sub-Zero) con la estación exterior de fuego de 4.5 metros: Asador Argentino Santa María con volante de elevación, parrilla híbrida Kalamazoo, horno de piedra para pizza a 450°C, Kamado y cava Dry-Ager de Wagyu A5.",
+        "items": [
+          [
+            "Asador Santa María Inox 316L + Grill Híbrido Kalamazoo K750HB",
+            "¥5,800,000",
+            "$36,700"
+          ],
+          [
+            "Cava Maduradora Dry-Ager DX1000 Wagyu A5 + Horno Pizza 450°C",
+            "¥3,900,000",
+            "$24,700"
+          ],
+          [
+            "Set Hornos Gaggenau Serie 400 (Vapor BO480 + Pirolítico + Inducción)",
+            "¥3,450,000",
+            "$21,800"
+          ],
+          [
+            "Refrigerador Sub-Zero BI-48SD Panelado + Cava Vinos/Sake RW466",
+            "¥4,200,000",
+            "$26,600"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50. Indoor-outdoor culinary sanctuary at Villa Ayame Kamakurayama: inside on the left, an 80.0 cm high American black walnut kitchen with black Nero Marquina quartz island, Gaggenau 400 series ovens, and Sub-Zero wine storage; outside on the right through retracted glass walls on the covered basalt cantilever deck, a 4.5-meter stainless-steel outdoor kitchen featuring an Argentine Santa Maria crank grill over glowing Binchotan coals, a stone pizza oven at 450°C, a glass-door Wagyu A5 dry-aging cabinet, and a draft beer tap facing Mount Fuji and Enoshima at sunset. Zero people."
+      },
+      {
+        "num": "05 / 10",
+        "code": "KAM-IMG-05",
+        "file": "./assets/img/kamakura_05_b1f_garage_studio.jpg",
+        "title": "Showroom Industrial B1F (Daytona House × LD&K) & Estudio Box-in-Box (-55 dB)",
+        "zone": "Planta Subterránea B1F · Roca Madre",
+        "area": "118.0 m² (35.69 坪) Garaje + 28.0 m² (8.47 坪) Estudio",
+        "total_jpy": 32450000,
+        "desc": "Inspirado en Daytona House × LD&K con estructura de acero negro mate expuesto, grilla LED hexagonal/geométrica en techo y piso epóxico espejo. Alberga la Toyota Hilux GR Sport Negra (#218) en bahía con rejilla de lavado, Vellfire Z Premier, WRX S4 STI y GR86 RZ (expandible a 6 autos con elevadores). Separado por cristal triple laminado Dr-55 se ubica el estudio de streaming y museo de coleccionables.",
+        "items": [
+          [
+            "Flota 4 Vehículos (Hilux Negra #218, Vellfire, WRX S4, GR86 RZ)",
+            "¥18,050,000",
+            "$114,300"
+          ],
+          [
+            "Estudio Acústico Box-in-Box Yamaha Avitecs (-55 dB) + Dual PC RTX 5090",
+            "¥8,200,000",
+            "$51,900"
+          ],
+          [
+            "Acabado Industrial Daytona House × LD&K (Epóxico, Acero, LED, Lavado)",
+            "¥4,400,000",
+            "$27,800"
+          ],
+          [
+            "Vitrinas Museo Iluminadas UV-Free (Digimon, Godzilla, Blue Archive)",
+            "¥1,800,000",
+            "$11,400"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50. Subterranean B1F luxury industrial garage inspired by Daytona House x LD&K inside Villa Ayame Kamakurayama: exposed matte-black structural steel beams, geometric linear LED ceiling lights, mirror-gloss dark grey epoxy floor, housing four vehicles—a Matte-Black (#218) Toyota Hilux GR Sport pickup over a stainless wash grate, a black Toyota Vellfire, a blue Subaru WRX S4 STI, and a red Toyota GR86. Through a soundproof triple-glazed acoustic glass wall on the left is a floating Box-in-Box streaming studio with dual monitors, Shure/Neumann microphone, and illuminated museum display cases of Godzilla and Digimon figures. Zero people."
+      },
+      {
+        "num": "06 / 10",
+        "code": "KAM-IMG-06",
+        "file": "./assets/img/kamakura_06_bjj_dojo_sauna.jpg",
+        "title": "Dojo Subterráneo BJJ & Muay Thai + Sauna Finlandés Löyly 95°C & Cold Plunge 15°C",
+        "zone": "Planta B1F Ala Este (Ejes X7–X8)",
+        "area": "20.5 m² Dojo + 7.5 m² Sauna & Crioterapia (8.47 坪)",
+        "total_jpy": 8500000,
+        "desc": "Dojo privado desacoplado acústicamente sobre losa flotante vulcanizada de 30mm: tatami oficial Zebra Grappling de 50mm, muros acolchados, saco banana Fairtex de 6 pies (180cm) para low-kicks, saco Teardrop de clinch, vitrina en nogal con desinfección UV-C para Gis de BJJ y Power Rack Rogue plegable. Contiguo al sauna finlandés Harvia (95°C) en cedro rojo y tina de inmersión en basalto a 15°C.",
+        "items": [
+          [
+            "Tatami Zebra 50mm + Wall Pads + Saco Fairtex 6ft + Teardrop",
+            "¥1,950,000",
+            "$12,300"
+          ],
+          [
+            "Power Rack Rogue RML-3WC + Barra Eleiko + Set Kettlebells/Discos",
+            "¥1,250,000",
+            "$7,900"
+          ],
+          [
+            "Vitrina en Nogal con Esterilización UV-C & Ozono para Gis y Guantes",
+            "¥700,000",
+            "$4,400"
+          ],
+          [
+            "Sauna Cedro Rojo Harvia Cilindro 9kW (95°C) + Cold Plunge Basalto 15°C",
+            "¥4,600,000",
+            "$29,100"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50. Private subterranean Brazilian Jiu-Jitsu and Muay Thai Dojo in the B1F bunker of Villa Ayame Kamakurayama: black 50mm Zebra tatami grappling mats, padded walls, a 6-foot leather Fairtex banana heavy bag and clinch teardrop bag hanging from a steel beam, an illuminated walnut display cabinet holding white and blue BJJ Gis and championship belts, and a fold-back Rogue power rack. On the right through a frameless glass door is a glowing red-cedar Finnish Löyly sauna (95°C) with Harvia stove and a black basalt 15°C cold plunge tub. Zero people."
+      },
+      {
+        "num": "07 / 10",
+        "code": "KAM-IMG-07",
+        "file": "./assets/img/kamakura_07_idol_atelier_onsen.jpg",
+        "title": "Atelier Secreto de Pelucas/Idol (CRI 98+) & Rotenburo Onsen Hinoki con Cristal PDLC",
+        "zone": "Planta Superior 2F · Ala Sur y Sureste",
+        "area": "24.0 m² Atelier + 14.5 m² Onsen Mirador (11.64 坪)",
+        "total_jpy": 11800000,
+        "desc": "Santuario personal para あやめ: tocador profesional con iluminación espectro solar CRI 98+ (5000K/3200K), exhibidor climatizado para 18 pelucas estilizadas, lavabo profundo con trampa de fibras y ranura de aspiración central al ras del suelo (Toe-Kick Vacuum) que absorbe recortes de cabello en 3 segundos. Al lado, el baño Onsen en ciprés Hinoki de Kiso con cristal inteligente PDLC frente al mar.",
+        "items": [
+          [
+            "Atelier Pelucas: Ebanistería 18 Maniquíes + Espejos CRI 98+ + Piso Danza",
+            "¥3,600,000",
+            "$22,800"
+          ],
+          [
+            "Sistema Aspiración Central Toe-Kick + Lavabo Profundo Trampa Cabello",
+            "¥1,300,000",
+            "$8,200"
+          ],
+          [
+            "Bañera Artesanal Ciprés Hinoki Kiso + Grifería Termostática TOTO",
+            "¥3,800,000",
+            "$24,100"
+          ],
+          [
+            "Ventanal Esquinero Cristal Inteligente PDLC (Opaco en 0.1s) + Neorest NX2",
+            "¥3,100,000",
+            "$19,600"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50. Split architectural interior on the 2F level of Villa Ayame Kamakurayama: on the left, a luxury private Idol dance and wig styling atelier featuring a wall of backlit walnut display niches holding colorful styled cosplay wigs on mannequin heads, a Hollywood vanity mirror with CRI 98+ lighting, a sprung wood dance floor, and a stainless toe-kick vacuum slot; on the right, a serene Japanese Hinoki cypress Onsen bath overlooking Sagami Bay and Mount Fuji through switchable PDLC smart glass windows. Zero people."
+      },
+      {
+        "num": "08 / 10",
+        "code": "KAM-IMG-08",
+        "file": "./assets/img/kamakura_08_infinity_pool_sunset.jpg",
+        "title": "Ingeniería Hidráulica de la Piscina Infinita Acrílica 50mm al Atardecer",
+        "zone": "1F Sky-Deck Oeste · Borde Infinito hacia el Monte Fuji",
+        "area": "23.8 m² Espejo de Agua (8.50m × 2.80m · Prof. 1.25m)",
+        "total_jpy": 18500000,
+        "desc": "Vista a ras del agua al atardecer mostrando el panel frontal de metacrilato Nippura de 50mm de espesor empotrado en la viga sísmica en voladizo, la playa húmeda de 30 cm con reposeras sumergidas para tomar el sol en agua a 38°C durante el invierno, el canal perimetral de desborde silencioso y el fogatero encendido frente a la silueta del Monte Fuji.",
+        "items": [
+          [
+            "Vaso Estructural Impermeabilizado + Rompeolas Sísmicos Internos",
+            "¥8,200,000",
+            "$51,900"
+          ],
+          [
+            "Panel Acrílico Estructural Nippura 50mm (Claridad Óptica Acuario)",
+            "¥4,900,000",
+            "$31,000"
+          ],
+          [
+            "Bomba de Calor EcoCute 38°C + Electrólisis Salina + UV-C (0% Olor Cloro)",
+            "¥3,200,000",
+            "$20,300"
+          ],
+          [
+            "Cubierta Térmica Motorizada Oculta + Iluminación Subacuática RGBW",
+            "¥2,200,000",
+            "$13,900"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50, water-level perspective at golden hour sunset. Close-up architectural view of the cantilevered 8.5m heated infinity pool on the black basalt Sky-Deck of Villa Ayame Kamakurayama: crystal-clear 38°C steaming water overflowing across a thick 50mm transparent acrylic front wall, a 30cm shallow Baja sun shelf with two submerged loungers, a sunken circular gas fire pit glowing on the right, and the dramatic silhouette of Mount Fuji and Enoshima Island across Sagami Bay. Zero people."
+      },
+      {
+        "num": "09 / 10",
+        "code": "KAM-IMG-09",
+        "file": "./assets/img/kamakura_09_hanare_and_kids_wing.jpg",
+        "title": "Suite «Hanare» Insonorizada (Dr-45) para Hermana & Bebé + Ala 4 Hijos (2F)",
+        "zone": "1F Noroeste (Hanare) + 2F Norte (4 Habitaciones Hijos)",
+        "area": "34.0 m² Hanare + 64.0 m² Ala 4 Hijos (29.64 坪)",
+        "total_jpy": 9700000,
+        "desc": "A la izquierda, la Suite Hanare en 1F para las visitas de la hermana mayor de あやめ y su bebé: muros con aislamiento acústico Dr-45, tatami acolchado al ras del suelo, cuna artesanal en ciprés Hinoki, kitchenette de nogal para preparar biberones sin salir del cuarto y baño privado. A la derecha, el ala norte 2F con las 4 habitaciones modulares de los futuros hijos en nogal y Hinoki con tragaluces.",
+        "items": [
+          [
+            "Suite Hanare Dr-45: Tatami Daiken, Cuna Hinoki, Kitchenette & Baño TOTO",
+            "¥4,100,000",
+            "$26,000"
+          ],
+          [
+            "4 Dormitorios Hijos en Nogal/Hinoki (Karimoku Custom: Camas & Escritorios)",
+            "¥5,600,000",
+            "$35,500"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP digital back, Rodenstock 23mm f/5.6 tilt-shift lens, f/8, ISO 50, natural daylight, Architectural Digest Japan editorial photography. Split-level architectural showcase: on the left, the independent Dr-45 soundproofed 'Hanare' guest suite designed for a sister and baby, featuring warm Japanese Hinoki cypress walls, a low baby-safe tatami platform bed, a handcrafted wooden baby crib, compact walnut kitchenette, and double acoustic timber doors. On the right, the 2F North Wing modular children's bedrooms in warm American black walnut and Hinoki wood with built-in study desks, skylights, and warm 2700K circadian LED cove lighting overlooking Kamakura pine trees. Zero people."
+      },
+      {
+        "num": "10 / 10",
+        "code": "KAM-IMG-10",
+        "file": "./assets/img/kamakura_10_blender_maqueta.png",
+        "title": "Maqueta Volumétrica 3D en Blender 5.0.1 Cycles (Escala 1:100 · Archivos .BLEND & .GLB)",
+        "zone": "Sección Integral B1F + 1F + 2F + 18 Pilotes Sísmicos",
+        "area": "Modelo 3D Nativo Completo · 418.50 m² Construidos",
+        "total_jpy": 2800000,
+        "desc": "Render de estudio generado por trazado de rayos (Cycles) en Blender 5.0.1 sobre pedestal de nogal. Permite inspeccionar en corte axonométrico los 18 pilotes de acero a -12.5m, el búnker sísmico B1F con las 4 bahías vehiculares y el Dojo, la losa en voladizo 1F con la piscina infinita y el nivel 2F con el Atelier y Onsen.",
+        "items": [
+          [
+            "Levantamiento Topográfico 3D LiDAR + BIM ArchiCAD/Blender 1:50",
+            "¥1,600,000",
+            "$10,100"
+          ],
+          [
+            "Cálculo Estructural Sísmico Grado 3+ & Maqueta Física Acrílico/Nogal",
+            "¥1,200,000",
+            "$7,600"
+          ]
+        ],
+        "prompt": "Blender 5.0.1 Cycles raytraced architectural scale model (1:100 maquette) of Villa Ayame Kamakurayama mounted on a dark walnut exhibition plinth with brass nameplate. Cutaway multi-level visualization showing the 18 deep steel piles in bedrock, B1F concrete garage with 4 scale cars (including black Hilux pickup) and BJJ dojo, 1F cantilevered basalt deck with turquoise acrylic infinity pool and sunken living pit, and 2F timber frame bedrooms and Hinoki bath. Studio rim lighting, 35mm macro lens."
+      }
+    ],
+    "okinawa": [
+      {
+        "num": "01 / 10",
+        "code": "OKI-IMG-01",
+        "file": "./assets/img/okinawa_01_overwater_pavilion.jpg",
+        "title": "Pabellón Principal «Overwater» sobre la Laguna de Coral con Piso de Cristal 60mm",
+        "zone": "Laguna Turquesa Privada · Pilotes Marinos Antitifón",
+        "area": "95.0 m² (28.73 坪) Pabellón Sobre el Agua",
+        "total_jpy": 58000000,
+        "desc": "A diferencia de la casa de acantilado en Kamakura, en Okinawa la vida flota literalmente sobre el arrecife privado. Cimentado sobre pilotes marinos de hormigón puzolánico y acero inoxidable 316L (Taisei Corp), cuenta con ventana estructural de acrílico Nippura de 60mm en el piso para ver tortugas marinas desde la cama, red-hamaca suspendida sobre el agua y escalera privada en teca directo al mar.",
+        "items": [
+          [
+            "Pilotes Marinos Puzolánicos + Plataforma Antitifón Taisei Corp",
+            "¥34,000,000",
+            "$215,300"
+          ],
+          [
+            "Ventana de Piso Subacuática Nippura 60mm Iluminada + Red-Hamaca Marina",
+            "¥11,500,000",
+            "$72,800"
+          ],
+          [
+            "Carpintería en Teca Birmana Grado Marino + Mobiliario Dedon/Minotti",
+            "¥12,500,000",
+            "$79,100"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50, bright tropical midday sun. Overwater luxury architectural pavilion in Okinawa, Japan cantilevers over a crystal-clear turquoise coral reef lagoon: warm Burmese teak timber ceiling and deck, a recessed 60mm transparent structural glass floor panel revealing sea turtles and colorful reef fish swimming directly beneath the king-size floating teak bed, an overwater woven catamaran hammock net suspended above the water, and teak steps descending straight into the calm sea. Zero people."
+      },
+      {
+        "num": "02 / 10",
+        "code": "OKI-IMG-02",
+        "file": "./assets/img/okinawa_02_bamboo_muaythai_cenote.jpg",
+        "title": "Palapa Abierta de Bambú Guadua para Muay Thai & BJJ + Cenote Natural a 14°C",
+        "zone": "Playa Oeste & Manglar de Piedra Caliza de Ryukyu",
+        "area": "45.0 m² (13.61 坪) Dojo de Playa + Cenote Natural",
+        "total_jpy": 19800000,
+        "desc": "Olvídate de entrenar encerrado: una catedral bioclimática tejida en bambú gigante Guadua (calculada aerodinámicamente para dejar pasar el viento de tifones) al borde de la arena blanca. Tatami marino impermeable Zebra, sacos pesados Fairtex de cuero tailandés mecidos por la brisa del mar y, al terminar el sparring, inmersión directa en un cenote natural de roca caliza de Ryukyu con agua dulce enfriada a 14°C.",
+        "items": [
+          [
+            "Estructura Abierta de Bambú Gigante Guadua Tratado al Boro (45 m²)",
+            "¥8,600,000",
+            "$54,400"
+          ],
+          [
+            "Tatami Marino Impermeable Zebra + Ring Cuerdas + Sacos Fairtex Cuero",
+            "¥4,800,000",
+            "$30,400"
+          ],
+          [
+            "Acondicionamiento de Cenote Natural en Caliza de Ryukyu + Chiller 14°C",
+            "¥6,400,000",
+            "$40,500"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50, golden tropical afternoon. Open-air traditional Thai-inspired bamboo Muay Thai and BJJ beach palapa pavilion on a private white-sand beach in Okinawa: soaring arched Guadua bamboo roof trusses, marine-grade blue and black grappling tatami mats, brown leather Fairtex banana heavy bags swaying in the ocean breeze, and right beside the wooden deck, a natural crystal-clear freshwater limestone cenote cold plunge pool (14°C) shaded by lush tropical banyan trees and ferns. Zero people."
+      },
+      {
+        "num": "03 / 10",
+        "code": "OKI-IMG-03",
+        "file": "./assets/img/okinawa_03_barefoot_robata_tiki.jpg",
+        "title": "Robata Irori Hundido en Arena Blanca para Pies Descalzos & Swim-Up Tiki Bar",
+        "zone": "Laguna Central & Piscina Infinita de Agua Salada",
+        "area": "68.0 m² (20.57 坪) Zona Gastronómica de Playa",
+        "total_jpy": 22400000,
+        "desc": "Experiencia gastronómica 100% de playa que no se repite en ninguna otra casa: un comedor circular hundido directamente en la arena blanca coralina para cenar descalzos alrededor de un hogar japonés Irori/Robata donde se asan langostas de Okinawa, pescado recién capturado y carne Ishigaki al carbón Binchotan, conectado a una barra Tiki con asientos sumergidos dentro de la piscina.",
+        "items": [
+          [
+            "Hogar Robata/Irori en Piedra de Ryukyu & Inox 316L + Mesa Circular Teca",
+            "¥7,900,000",
+            "$50,000"
+          ],
+          [
+            "Swim-Up Tiki Bar con 6 Bancos Sumergidos en Piscina + Máquina Hielo Hoshizaki",
+            "¥8,500,000",
+            "$53,800"
+          ],
+          [
+            "Horno Tailandés en Roca Coralina + Ahumador Tropical de Mariscos",
+            "¥6,000,000",
+            "$38,000"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50, tropical sunset with glowing tiki torches. Barefoot beach dining sanctuary on a private island in Okinawa: a circular sunken conversation and dining pit carved directly into powdery white coral sand, centered around a traditional Japanese Robata charcoal hearth grilling fresh Okinawa spiny lobsters and reef fish on skewers; seamlessly connected on the right to a turquoise infinity pool with submerged stone barstools at a thatched Swim-Up Tiki Bar. Zero people."
+      },
+      {
+        "num": "04 / 10",
+        "code": "OKI-IMG-04",
+        "file": "./assets/img/okinawa_04_blue_cave_cats_cinema.jpg",
+        "title": "Gruta Marina Bioluminiscente (Blue Cave Spa), Oasis Gajumaru de Gatos & Cine Flotante",
+        "zone": "Acantilado Coralino Este & Jardín de Banyans",
+        "area": "52.0 m² Gruta Spa + 35.0 m² Jardín Gatos (26.31 坪)",
+        "total_jpy": 24500000,
+        "desc": "Dentro de una cueva natural de piedra caliza marina se esculpió una laguna termal de talasoterapia con iluminación subacuática azul que recrea la famosa Gruta Azul de Okinawa. Afuera, un jardín sombreado con árboles sagrados Gajumaru (Banyan) unidos por puentes colgantes a 12° para los 3 gatos senior y una cama-cine flotante con pantalla retráctil sobre el mar.",
+        "items": [
+          [
+            "Obra Civil en Gruta Caliza + Piscina Thalasso Agua de Mar Caliente + Fibra Azul",
+            "¥12,000,000",
+            "$76,000"
+          ],
+          [
+            "Oasis Felino Gajumaru: Malla Invisible, Puentes Colgantes 12° & Casa Brisa",
+            "¥5,800,000",
+            "$36,700"
+          ],
+          [
+            "Cine Flotante Exterior: Proyector Láser 4K Barco/Sony + Pantalla Marina",
+            "¥6,700,000",
+            "$42,400"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50, magical twilight. Split tropical sanctuary in Okinawa: on the left, inside a natural Ryukyu limestone sea grotto, a glowing bioluminescent-blue heated seawater thalassotherapy spa pool with smooth stone ledges; in the center, ancient Gajumaru banyan trees fitted with gentle rope-and-teak catwalk bridges where three senior cats rest in the cool shade; on the right, a floating teak daybed on the calm lagoon facing a retractable outdoor cinema screen under the stars. Zero people."
+      },
+      {
+        "num": "05 / 10",
+        "code": "OKI-IMG-05",
+        "file": "./assets/img/okinawa_05_pier_boathouse_yacht.jpg",
+        "title": "Muelle Privado de Piedra Ryukyu (35m), Boathouse & Catamarán Solar de 45 Pies",
+        "zone": "Bahía Profunda Norte · Calado 3.5m",
+        "area": "Muelle 35m + Garaje Náutico 110 m² (33.27 坪)",
+        "total_jpy": 62600000,
+        "desc": "Para entrar y salir de la isla con total libertad o navegar por las aguas de Kerama/Miyako: muelle privado en bloques de piedra caliza de Ryukyu con iluminación guía LED, Boathouse techado con elevador hidráulico antitifón, yate catamarán híbrido-solar de 45 pies, 2 motos de agua Sea-Doo GTX Limited 300, kayaks transparentes para あやめ y 2 scooters submarinos Seabob.",
+        "items": [
+          [
+            "Muelle de Piedra Caliza Ryukyu 35m + Boathouse con Elevador Hidráulico",
+            "¥19,600,000",
+            "$124,100"
+          ],
+          [
+            "Yate Catamarán Solar-Híbrido de 45 Pies (Cabina VIP + Flybridge)",
+            "¥36,500,000",
+            "$231,100"
+          ],
+          [
+            "2x Motos de Agua Sea-Doo GTX Limited 300 + 2x Seabob F5 SR + Kayaks Cristal",
+            "¥6,500,000",
+            "$41,200"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50, golden sunset. Private marine harbor of Villa Ayame Coral Sanctuary in Okinawa: a 35-meter pier crafted from white Ryukyu coral limestone blocks extends into crystal-clear turquoise water toward a sleek 45-foot solar-hybrid luxury catamaran yacht moored alongside. On the right, an architectural concrete-and-teak boathouse shelters two black-and-gold Sea-Doo jet skis, transparent glass-bottom kayaks, and Seabob underwater scooters. Zero people."
+      },
+      {
+        "num": "06 / 10",
+        "code": "OKI-IMG-06",
+        "file": "./assets/img/okinawa_06_aerial_bridge_promontory.jpg",
+        "title": "Vista Aérea del Promontorio Privado Conectado por Puente (Escenario A) & Hilux Negra",
+        "zone": "Emplazamiento General · 3,800 m² + 300m Playa Privada",
+        "area": "3,800 m² (1,149.5 坪) Terreno · 410 m² (124.0 坪) Construidos",
+        "total_jpy": 195000000,
+        "desc": "El Escenario A (Promontorio Privado conectado por puente escénico tipo Miyakojima / Kouri) ofrece lo mejor de ambos mundos: 100% de privacidad con playa y arrecife propios (0% turistas), pero con conexión terrestre directa para cruzar en tu Toyota Hilux GR Sport Negra (#218) en 10 minutos al hospital o supermercado sin quedar aislado en temporada de tifones.",
+        "items": [
+          [
+            "Terreno Promontorio Privado 3,800 m² frente al Arrecife (Propiedad Plena)",
+            "¥120,000,000",
+            "$760,000"
+          ],
+          [
+            "Estructura Monolítica Antitifón 85 m/s (Taisei Corp + Asahi Kasei Hebel Haus)",
+            "¥75,000,000",
+            "$475,000"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP aerial drone perspective, 28mm lens, f/8, ISO 50, golden sunset. Sweeping aerial view of Villa Ayame Coral Sanctuary perched on a private lush tropical headland promontory in Okinawa surrounded by 300 meters of powdery white sand beach and turquoise coral reefs. Monolithic architectural white Ryukyu limestone and low-pitched red Okinawa Kawara tile roofs built by Taisei Corporation, infinity pool merging with the sea, private pier with a 45ft yacht, and a gated private driveway where a Matte-Black (#218) Toyota Hilux GR Sport is parked. Zero people."
+      },
+      {
+        "num": "07 / 10",
+        "code": "OKI-IMG-07",
+        "file": "./assets/img/okinawa_07_tropical_kitchen_80cm.jpg",
+        "title": "Cocina Tropical Interior-Exterior a 80.0 cm en Teca Birmana & Teppanyaki Marino",
+        "zone": "Pabellón Central 1F · Ventilación Cruzada Natural",
+        "area": "54.0 m² (16.33 坪) Cocina & Comedor Lanai",
+        "total_jpy": 16200000,
+        "desc": "Diseñada para el clima tropical húmedo sin un solo tornillo oxidable: ebanistería completa en teca birmana maciza curada en aceite natural e isla de piedra caliza de Ryukyu sellada a 80.0 cm exactos de altura para あやめ. Incluye plancha Teppanyaki de acero inoxidable marino 316L para cocinar mariscos y Wagyu frente a la laguna.",
+        "items": [
+          [
+            "Cocina en Teca Birmana Grado Marino + Isla Piedra de Ryukyu a 80.0 cm",
+            "¥7,400,000",
+            "$46,900"
+          ],
+          [
+            "Plancha Teppanyaki Gaggenau VP414 + Inducción + Campana Down-Draft",
+            "¥4,600,000",
+            "$29,100"
+          ],
+          [
+            "Refrigeración Sub-Zero Tropicalizada + Cava de Champaña y Awamori",
+            "¥4,200,000",
+            "$26,600"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50. Open-concept tropical luxury kitchen and lanai at Villa Ayame Okinawa: handcrafted Burmese teak cabinetry and an 80.0 cm ergonomic island carved from honed white Ryukyu coral limestone, integrated stainless-steel Teppanyaki grill and Gaggenau induction cooktop, brass marine fixtures, ceiling fans in dark tropical hardwood, and wide folding glass doors completely open to the turquoise coral lagoon and infinity pool. Zero people."
+      },
+      {
+        "num": "08 / 10",
+        "code": "OKI-IMG-08",
+        "file": "./assets/img/okinawa_08_master_lagoon_ofuro.jpg",
+        "title": "Master Suite a Nivel de Laguna con Ventana de Arrecife & Ofuro en Piedra de Ryukyu",
+        "zone": "Ala Sur Privada · Nivel del Mar (+1.8m)",
+        "area": "62.0 m² (18.75 坪) Master Suite + Terraza Ofuro",
+        "total_jpy": 24900000,
+        "desc": "Despertar viendo el mar turquesa de Okinawa desde la cama flotante de teca mientras tortugas verdes y peces de arrecife pasan bajo el cristal iluminado del suelo. Afuera, en la terraza privada rodeada de frangipanis y monsteras, una bañera Ofuro monolítica tallada en un solo bloque de piedra caliza de Ryukyu de 1.8 toneladas con ducha de lluvia en latón marino.",
+        "items": [
+          [
+            "Cama Flotante King en Teca + Ventana Subacuática Iluminada en Piso",
+            "¥9,500,000",
+            "$60,200"
+          ],
+          [
+            "Ofuro Monolítico Tallado en Piedra Caliza de Ryukyu + Ducha Dornbracht",
+            "¥8,400,000",
+            "$53,200"
+          ],
+          [
+            "Ventanales Antitifón YKK AP (5,000 Pa) + Climatización Deshumidificadora Daikin",
+            "¥7,000,000",
+            "$44,300"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP digital back, Rodenstock 23mm tilt-shift lens, f/8, ISO 50, golden-hour tropical sunlight, Casa Brutus luxury resort editorial photography. A serene master bedroom pavilion built in Burmese teak and white Ryukyu coral limestone cantilevers right at water level over a crystal-clear turquoise coral reef lagoon where sea turtles and colorful reef fish are visible through a recessed structural glass floor window. King-size floating teak platform bed with crisp white linen, floor-to-ceiling hurricane-rated glass sliding doors opening onto a private tropical deck with a deep carved Ryukyu limestone soaking tub (Ofuro) and outdoor brushed-brass rain shower. Zero people."
+      },
+      {
+        "num": "09 / 10",
+        "code": "OKI-IMG-09",
+        "file": "./assets/img/okinawa_09_offgrid_engineering_bay.jpg",
+        "title": "Búnker de Ingeniería Autónoma Off-Grid: Solar 28kW, Desalinizadora & Compuertas 5,000 Pa",
+        "zone": "Búnker Técnico Excavado en Roca Coralina (Taisei + Kuniken)",
+        "area": "42.0 m² (12.70 坪) Sala de Control Autónomo",
+        "total_jpy": 34000000,
+        "desc": "La garantía física de que la casa de Okinawa jamás sufrirá cortes ni daños durante un supertifón Categoría 5: sala acorazada en hormigón de alta densidad con planta desalinizadora de agua de mar por ósmosis inversa de doble paso (8,000 litros/día + mineralización UV), banco de 4 baterías Tesla Powerwall 3 (54 kWh) alimentadas por 28.1 kW solares y compuertas motorizadas de aluminio anodizado LIXIL/YKK AP.",
+        "items": [
+          [
+            "Planta Desalinizadora Marina Ósmosis Inversa (8,000 L/día) en Inox 316L",
+            "¥14,500,000",
+            "$91,800"
+          ],
+          [
+            "Techo Solar Antitifón 28.1 kW + 4x Baterías Tesla Powerwall 3 (54 kWh)",
+            "¥11,800,000",
+            "$74,700"
+          ],
+          [
+            "Compuertas Motorizadas Antitifón LIXIL/YKK AP (5,000 Pa / 300 km/h)",
+            "¥7,700,000",
+            "$48,800"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP digital back, 24mm tilt-shift lens, f/8, ISO 50, crisp architectural lighting. Inside a spotless, museum-grade concrete and marine-grade 316L stainless-steel engineering bay carved into the coral limestone bedrock of a private island in Okinawa. On the left, a gleaming dual-pass seawater Reverse Osmosis desalination system (8,000 liters/day) with brushed stainless-steel pressure vessels and digital telemetry. On the right, four sleek white Tesla Powerwall 3 battery units mounted on a board-formed concrete wall next to a solar telemetry screen showing 28.1 kW. In the background, motorized anodized aluminum typhoon storm shutters open to the turquoise sea. Zero people."
+      },
+      {
+        "num": "10 / 10",
+        "code": "OKI-IMG-10",
+        "file": "./assets/img/okinawa_10_blender_maqueta.png",
+        "title": "Maqueta Volumétrica 3D en Blender 5.0.1 Cycles (Escala 1:150 · Archivos .BLEND & .GLB)",
+        "zone": "Isla Completa · Arrecife, Laguna, Villa, Palapa, Gruta y Muelle",
+        "area": "Modelo 3D Nativo Completo · 3,800 m² Terreno + Laguna",
+        "total_jpy": 3200000,
+        "desc": "Maqueta arquitectónica generada en Blender 5.0.1 con motor Cycles: muestra la topografía de roca caliza de Ryukyu, el agua turquesa traslúcida de la laguna de coral, el pabellón Overwater sobre pilotes, la palapa octogonal de bambú con el cenote, la gruta azul y el muelle de 35m con el catamarán solar.",
+        "items": [
+          [
+            "Estudio Batimétrico de Arrecife & Corrientes + Modelo BIM/Blender 1:150",
+            "¥2,000,000",
+            "$12,700"
+          ],
+          [
+            "Simulación de Túnel de Viento Tifón 85 m/s (Kuniken Ltd. Okinawa)",
+            "¥1,200,000",
+            "$7,600"
+          ]
+        ],
+        "prompt": "Blender 5.0.1 Cycles raytraced architectural scale model (1:150 maquette) of Villa Ayame Coral Sanctuary in Okinawa on a dark walnut exhibition base. Shows the white coral sand island, translucent turquoise lagoon water, overwater teak pavilion with glass floor, octagonal bamboo Muay Thai beach palapa next to a blue limestone cenote, terracotta Okinawa Kawara tiled main villa, and a 35m stone pier with a scale catamaran yacht. Studio lighting, 35mm lens."
+      }
+    ],
+    "niseko": [
+      {
+        "num": "01 / 10",
+        "code": "NIS-IMG-01",
+        "file": "./assets/img/niseko_01_christmas_chalet_hilux.jpg",
+        "title": "Chalet Navideño en Niseko, Pino Iluminado de 6m & Rampa Geotérmica con Hilux Negra",
+        "zone": "Fachada Sur frente al Monte Yotei · 9,200 m² Bosque Privado",
+        "area": "9,200 m² (2,783 坪) Terreno · 485 m² (146.7 坪) Construidos",
+        "total_jpy": 248000000,
+        "desc": "Ubicado en 9,200 m² de bosque privado de abedules plateados en Niseko frente al cono nevado del Monte Yotei. Construido por Suda Corporation + Sekisui House con estructura para soportar 3.0 metros de nieve acumulada, piedra volcánica de Tokachi, pino natural de Navidad de 6 metros iluminado en dorado cálido y rampa geotérmica libre de hielo con tu Toyota Hilux GR Sport Negra (#218) y 2 motos de nieve Ski-Doo.",
+        "items": [
+          [
+            "Terreno Forestal Privado 9,200 m² Vista Monte Yotei + Manantial Onsen Propio",
+            "¥138,000,000",
+            "$874,000"
+          ],
+          [
+            "Estructura Invernal Suda Corp + Sekisui House (Soporte 3.0m Nieve)",
+            "¥95,800,000",
+            "$606,700"
+          ],
+          [
+            "Rampa Geotérmica Hidrónica + Hilux Negra (#218) + 2x Ski-Doo Turbo",
+            "¥14,200,000",
+            "$89,900"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50, winter twilight. Ultra-luxury alpine Christmas chalet in Niseko, Hokkaido built in charred cedar timber and Tokachi volcanic stone set inside a private snow-covered silver birch forest facing the majestic snow-capped cone of Mount Yotei. A 6-meter living Christmas tree sparkles with warm golden lights beside a steaming outdoor infinity pool; in the foreground, a snow-free geothermally heated stone driveway holds a Matte-Black (#218) Toyota Hilux GR Sport pickup and two black-and-yellow Ski-Doo snowmobiles. Zero people."
+      },
+      {
+        "num": "02 / 10",
+        "code": "NIS-IMG-02",
+        "file": "./assets/img/niseko_02_blue_hour_postcard.jpg",
+        "title": "Postal Navideña en «Blue Hour»: Aleros Calefactados (3.0m Nieve) & Monte Yotei",
+        "zone": "Vista Panorámica Este-Sur · Crepúsculo Invernal de Hokkaido",
+        "area": "Cubierta Estructural de Gran Alero (320 m² Techo Calefactado)",
+        "total_jpy": 64000000,
+        "desc": "La vista digna de postal navideña que pediste para pasar diciembre con あやめ: mientras el cielo de Hokkaido se tiñe de azul cobalto y la nieve polvo («Japow») cae en silencio, el interior brilla a 2700K detrás de ventanales triples YKK AP APW 430 y los aleros con glicol caliente evitan la formación de carámbanos peligrosos.",
+        "items": [
+          [
+            "Cubierta Estructural de Gran Claro en Alerce Laminado + Roof Snow-Melt",
+            "¥38,000,000",
+            "$240,700"
+          ],
+          [
+            "Fachada Acristalada Triple Low-E con Gas Argón/Kriptón YKK AP APW 430",
+            "¥19,500,000",
+            "$123,500"
+          ],
+          [
+            "Pino Navideño Monumental 6.0m + Iluminación Escénica Invernal IP68",
+            "¥6,500,000",
+            "$41,200"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50, magical blue-hour winter dusk in Niseko, Hokkaido. Postcard-perfect wide architectural view of Villa Ayame Snow Peak Sanctuary glowing with warm 2700K firelight against deep powder snow and the dramatic snow-covered peak of Mount Yotei on the horizon. Deep timber eaves with heated snow-melt edges, illuminated 6m Christmas tree, and thermal mist rising from the outdoor rotenburo bath. Zero people."
+      },
+      {
+        "num": "03 / 10",
+        "code": "NIS-IMG-03",
+        "file": "./assets/img/niseko_03_pro_fight_camp_gym.jpg",
+        "title": "Niseko Pro Fight Camp (95 m²): Ring Muay Thai, Jaula MMA, Tatami 40 m² & Sled Track 15m",
+        "zone": "Ala Este Deportiva Climatizada · Vista Directa al Monte Yotei",
+        "area": "95.0 m² (28.73 坪) Centro de Alto Rendimiento Privado",
+        "total_jpy": 21200000,
+        "desc": "El gimnasio mejor implementado de las 4 propiedades: un verdadero Fight Camp profesional de 95 m² con Ring Oficial elevado de Muay Thai (5.0m×5.0m), pared octogonal de Jaula MMA de 8 metros para trabajo de clinch/wall-wrestling, 40 m² de tatami Zebra de 50mm sobre subsuelo elástico, pista de césped sintético de 15 metros para empuje de trineo (Sled Track) y 2 Power Racks Rogue Monster con discos calibrados Eleiko.",
+        "items": [
+          [
+            "Ring Oficial Muay Thai 5m×5m + Pared Jaula MMA 8m + 40m² Tatami Zebra 50mm",
+            "¥11,800,000",
+            "$74,700"
+          ],
+          [
+            "2x Power Racks Rogue RM-6 Monster + Discos Eleiko IWF + Pista Sled 15m",
+            "¥6,200,000",
+            "$39,300"
+          ],
+          [
+            "Batería de 5 Sacos Fairtex/Outslayer + Cardio (SkiErg, RowErg, Assault Bike)",
+            "¥3,200,000",
+            "$20,300"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50. Inside the 95 m2 Niseko Pro Fight Camp athletic wing in Hokkaido: exposed Hokkaido larch timber roof trusses and floor-to-ceiling triple-glazed windows framing snow-covered Mount Yotei. Features an elevated professional Muay Thai boxing ring, an 8-meter black vinyl-coated MMA cage wall panel, 40 m2 of 50mm Zebra grappling mats, a row of Fairtex leather heavy bags, a 15-meter green turf sled track with a weighted Rogue prowler sled, and two matte-black Rogue Monster power racks with calibrated Eleiko plates. Zero people."
+      },
+      {
+        "num": "04 / 10",
+        "code": "NIS-IMG-04",
+        "file": "./assets/img/niseko_04_thermal_pool_cat_igloo.jpg",
+        "title": "Rotenburo Onsen Volcánico (42°C), Piscina Térmica de 15m (40°C) & Iglú de Gatos",
+        "zone": "Terraza Geotérmica Exterior · Cero Hielo",
+        "area": "60.0 m² Piscina 15m×4m + 18.0 m² Onsen + 14.0 m² Iglú (27.83 坪)",
+        "total_jpy": 44500000,
+        "desc": "Mientras afuera la temperatura en Niseko baja a -12°C, tú y あやめ nadan en una piscina infinita de 15 metros de largo mantenida a 40°C constantes gracias al intercambiador geotérmico, o se sumergen en el Rotenburo de roca volcánica de Tokachi con agua mineral pura a 42°C. A su lado, un iglú geodésico de cristal triple a 26°C conectado por túnel interior permite a los 3 gatos senior mirar la nieve junto al fuego.",
+        "items": [
+          [
+            "Piscina Térmica Infinita de 15.0m × 4.0m (40°C en Invierno) + Cubierta Oculta",
+            "¥26,500,000",
+            "$167,800"
+          ],
+          [
+            "Rotenburo Onsen en Roca Volcánica de Tokachi (Manantial Propio 62°C -> 42°C)",
+            "¥11,500,000",
+            "$72,800"
+          ],
+          [
+            "Iglú Geodésico de Cristal Triple APW 430 (26°C) para Gatos Senior + Chimenea",
+            "¥6,500,000",
+            "$41,200"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50, winter blue-hour twilight. Outdoor thermal sanctuary of Villa Ayame Niseko in Hokkaido: on the left, a natural Tokachi volcanic boulder Rotenburo Onsen steaming at 42°C; in the center, a 15-meter heated infinity lap pool at 40°C with warm underwater lighting cutting through deep snow; on the right, a heated triple-glazed geodesic glass igloo dome (26°C) where three senior cats sleep on plush cushions beside a cozy bioethanol fireplace watching snowflakes fall against Mount Yotei. Zero people."
+      },
+      {
+        "num": "05 / 10",
+        "code": "NIS-IMG-05",
+        "file": "./assets/img/niseko_05_great_room_christmas_kitchen.jpg",
+        "title": "Gran Salón Alpino (Techo 7.0m), Chimenea Volcánica, Cocina Navideña 80cm & Vitrina Hilux",
+        "zone": "Planta Principal 1F · Corazón del Chalet de Navidad",
+        "area": "82.0 m² (24.80 坪) Gran Salón & Cocina de Invierno",
+        "total_jpy": 28400000,
+        "desc": "Catedral alpina de doble altura (7.0 metros) con cerchas de alerce de Hokkaido y una chimenea central de piedra volcánica de 4.0 metros. A la derecha, la cocina navideña de 80.0 cm de altura diseñada para que あやめ prepare pavo, panettone, galletas de jengibre y chocolate caliente en horno francés de cobre y Gaggenau 400. A la izquierda, vitrina acústica hacia el garaje subterráneo con la Hilux Negra (#218).",
+        "items": [
+          [
+            "Chimenea Monolítica Central de 4.0m en Roca Volcánica de Tokachi + Hogar Leña/Gas",
+            "¥6,800,000",
+            "$43,000"
+          ],
+          [
+            "Cocina Navideña a 80.0 cm: Isla Granito Negro Calefactada + Horno Cobre + Gaggenau",
+            "¥12,700,000",
+            "$80,400"
+          ],
+          [
+            "Mobiliario Invernal Minotti Alpine en Cachemira/Cuero + Comedor Roble 12 Personas",
+            "¥8,900,000",
+            "$56,400"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50. Double-height 7-meter alpine Great Room inside Villa Ayame Niseko: massive Hokkaido larch timber roof beams, a 4-meter central fireplace built of dark Tokachi volcanic stone with roaring flames, plush winter sofas with faux-fur throws facing Mount Yotei, an 80.0 cm Christmas chef's kitchen on the right with copper ovens and heated black granite island, and a structural glass showcase window on the lower left revealing the Matte-Black (#218) Toyota Hilux GR Sport and two Ski-Doo snowmobiles in the heated garage. Zero people."
+      },
+      {
+        "num": "06 / 10",
+        "code": "NIS-IMG-06",
+        "file": "./assets/img/niseko_06_cryo_barrel_sauna_lab.jpg",
+        "title": "Laboratorio de Crioterapia, Sauna Barril Panorámico 95°C & Cámara Hiperbárica 1.5 ATA",
+        "zone": "Ala de Medicina Deportiva · Niseko Pro Fight Camp",
+        "area": "28.0 m² (8.47 坪) Recovery & Biohacking Lab",
+        "total_jpy": 14800000,
+        "desc": "Dentro del mismo complejo del Fight Camp: sauna de barril artesanal en cedro rojo canadiense a 95°C con ventanal circular panorámico hacia la nieve y el Monte Yotei, tina empotrada de basalto y acero para baño de hielo alpino a 4.1°C exactos, cámara hiperbárica rígida de oxígeno puro al 100% (1.5 ATA) para regeneración de tejidos post-combate y generador de hipoxia simulada a 3,000m de altitud.",
+        "items": [
+          [
+            "Sauna de Barril Panorámico en Cedro Rojo (95°C) + Estufa Harvia + Ventanal Yotei",
+            "¥4,200,000",
+            "$26,600"
+          ],
+          [
+            "Tina de Crioterapia en Basalto & Inox con Chiller Digital a 4.1°C",
+            "¥2,900,000",
+            "$18,400"
+          ],
+          [
+            "Cámara Hiperbárica Rígida 1.5 ATA (OxyLife II) + Camilla Fisio + Hipoxia 3,000m",
+            "¥7,700,000",
+            "$48,800"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP digital back, 23mm tilt-shift lens, f/8, ISO 50, Architectural Digest photography. Inside the wellness and combat recovery wing of a luxury alpine chalet in Niseko: on the left, a handcrafted western red cedar panoramic barrel sauna (95°C) with a Harvia stove and a large circular glass window looking directly out at deep white Hokkaido powder snow and Mount Yotei. In the center, a recessed black Tokachi basalt cold plunge ice bath (4.1°C) with digital display. On the right, a white hard-shell 1.5 ATA hyperbaric oxygen therapy chamber, sports physiotherapy table, and hypoxic altitude generator. Zero people."
+      },
+      {
+        "num": "07 / 10",
+        "code": "NIS-IMG-07",
+        "file": "./assets/img/niseko_07_master_suite_hiba_ofuro.jpg",
+        "title": "Master Suite Alpina (2F) con Chimenea de 3 Caras & Ofuro de Ciprés Hiba de Aomori",
+        "zone": "Planta Superior 2F · Mirador Privado al Monte Yotei",
+        "area": "54.0 m² (16.33 坪) Master Suite Invernal",
+        "total_jpy": 14600000,
+        "desc": "Dormitorio principal bajo techo inclinado de alerce de Hokkaido: cama King en nogal vestida en cachemira y piel ecológica frente a una chimenea de piedra volcánica de tres caras y al Monte Yotei nevado. A la derecha, separado por cristal templado, un baño termal interior con bañera Ofuro en madera fragante de Ciprés Hiba de Aomori alimentada por el manantial volcánico.",
+        "items": [
+          [
+            "Cama King en Nogal + Chimenea Volcánica de 3 Caras + Piso Radiante Hidrónico",
+            "¥6,400,000",
+            "$40,500"
+          ],
+          [
+            "Ofuro Interior en Madera de Ciprés Hiba de Aomori + Grifería Termostática",
+            "¥4,800,000",
+            "$30,400"
+          ],
+          [
+            "Cerramiento Acristalado Triple YKK AP APW 430 + Cortinas Térmicas Lutron",
+            "¥3,400,000",
+            "$21,500"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP digital back, 23mm tilt-shift lens, f/8, ISO 50, blue-hour winter twilight outside and warm 2700K firelight inside. A luxurious master suite under a pitched roof of exposed Hokkaido larch timber beams. A king-size walnut platform bed dressed in cashmere and faux-fur throws faces a three-sided dark Tokachi volcanic stone fireplace with dancing flames and snow-covered Mount Yotei outside. On the right, separated by a clear glass partition, a fragrant Aomori Hiba cypress wooden soaking tub (Ofuro) overflows with steaming hot spring water. Zero people."
+      },
+      {
+        "num": "08 / 10",
+        "code": "NIS-IMG-08",
+        "file": "./assets/img/niseko_08_b1f_ski_room_cinema.jpg",
+        "title": "Búnker B1F de Invierno: Garaje Hilux Negra & Ski-Doos, Ski-Room Calefactado y Cine (-55 dB)",
+        "zone": "Planta Subterránea B1F · Acceso Directo Ski-In / Drive-In",
+        "area": "92.0 m² Garaje Invernal + 38.0 m² Ski-Room & Cine (39.32 坪)",
+        "total_jpy": 22800000,
+        "desc": "Al llegar de la nieve por la rampa geotérmica, entras al búnker subterráneo climatizado a 20°C donde se estacionan la Toyota Hilux GR Sport Negra (#218 con neumáticos de invierno) y las 2 motos de nieve Ski-Doo Summit Turbo. Detrás del muro de cristal acústico está el Ski-Room en cedro con secadores térmicos de botas/guantes y la sala de cine insonorizada (-55 dB) con barra de whisky japonés y chocolate caliente.",
+        "items": [
+          [
+            "Garaje Epóxico Calefactado B1F + Hilux Negra (#218) + 2x Ski-Doo Summit Turbo",
+            "¥11,200,000",
+            "$70,900"
+          ],
+          [
+            "Ski-Room en Cedro de Hokkaido (8 Lockers con Secadores Térmicos de Botas y Cascos)",
+            "¥4,400,000",
+            "$27,800"
+          ],
+          [
+            "Sala de Cine Acústica (-55 dB) Dolby Atmos + Butacas Reclinables Cuero + Whisky Bar",
+            "¥7,200,000",
+            "$45,600"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP digital back, 23mm tilt-shift lens, f/8, ISO 50. On the left side of the subterranean bunker in Niseko, a heated dark-grey epoxy garage showroom houses a gleaming Matte-Black (#218) Toyota Hilux Z GR Sport 4x4 pickup truck with winter snow tires parked next to two matte-black and yellow Ski-Doo Summit Turbo snowmobiles. Through a soundproof acoustic glass wall on the right, a bespoke Hokkaido cedar ski-and-snowboard locker room with heated boot dryers leads into an intimate -55 dB acoustic home cinema and whisky lounge. Zero people."
+      },
+      {
+        "num": "09 / 10",
+        "code": "NIS-IMG-09",
+        "file": "./assets/img/niseko_09_geothermal_plant_room.jpg",
+        "title": "Sala de Máquinas Geotérmica (Suda Corp): Derretimiento de Nieve & Intercambiador Onsen",
+        "zone": "Planta Técnica Subterránea B1F · Corazón Termomecánico",
+        "area": "34.0 m² (10.28 坪) Ingeniería Hidrónica & Geotérmica",
+        "total_jpy": 24500000,
+        "desc": "La razón por la que jamás tendrás que palear nieve ni pagar facturas astronómicas de calefacción en Hokkaido: bomba de calor geotérmica de pozo profundo (Viessmann GSHP-01), colectores (manifolds) en cobre y acero inoxidable que inyectan glicol caliente bajo la rampa vehicular y los techos, intercambiador de placas de titanio (GEA PHX-01) que regula el agua volcánica de 62°C a 42°C/40°C y banco de baterías Tesla.",
+        "items": [
+          [
+            "Bomba Geotérmica Pozo Profundo GSHP-01 + Manifolds Cobre/Inox Roof & Driveway",
+            "¥12,500,000",
+            "$79,100"
+          ],
+          [
+            "Intercambiador de Calor de Placas de Titanio GEA PHX-01 para Manantial Onsen",
+            "¥5,800,000",
+            "$36,700"
+          ],
+          [
+            "Banco de 4 Baterías Tesla Powerwall de Respaldo Invernal + Telemetría BMS",
+            "¥6,200,000",
+            "$39,300"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP digital back, 24mm tilt-shift lens, f/8, ISO 50. A pristine Japanese residential mechanical room in Niseko built by Suda Corporation with white epoxy floors and board-formed concrete walls. Featured prominently are polished copper and stainless-steel hydronic heating manifolds feeding glycol to the heated driveway and roof snow-melt loops, a central ground-source geothermal heat pump unit (GSHP-01), a titanium plate heat exchanger (PHX-01) for the volcanic Onsen spring water, and wall-mounted Tesla backup batteries. Zero people."
+      },
+      {
+        "num": "10 / 10",
+        "code": "NIS-IMG-10",
+        "file": "./assets/img/niseko_10_blender_maqueta.png",
+        "title": "Maqueta Volumétrica 3D en Blender 5.0.1 Cycles (Escala 1:120 · Archivos .BLEND & .GLB)",
+        "zone": "Complejo Alpino Completo · Chalet + Fight Camp 95m² + Piscina 15m",
+        "area": "Modelo 3D Nativo Completo · 9,200 m² Bosque + 485 m² Construidos",
+        "total_jpy": 3100000,
+        "desc": "Maqueta arquitectónica renderizada en Blender 5.0.1 Cycles sobre base de nogal: muestra el chalet alpino de doble agua para cargas extremas de nieve, el ala anexa de 95 m² del Niseko Pro Fight Camp con el ring y los racks visibles, la piscina térmica de 15m, el iglú geodésico de los gatos, el pino navideño de 6m y la rampa geotérmica negra libre de nieve.",
+        "items": [
+          [
+            "Modelado BIM/Blender 1:120 + Simulación Térmica & Carga de Nieve 3.0m",
+            "¥1,900,000",
+            "$12,000"
+          ],
+          [
+            "Ingeniería Hidráulica de Pozo Termal & Permisos Ambientales Hokkaido",
+            "¥1,200,000",
+            "$7,600"
+          ]
+        ],
+        "prompt": "Blender 5.0.1 Cycles raytraced architectural scale model (1:120 maquette) of Villa Ayame Snow Peak Sanctuary in Niseko on a dark walnut plinth. Depicts the snow-covered alpine topography, steeply pitched timber chalet roof, the 95 m2 Fight Camp wing with mini Muay Thai ring, the 15-meter steaming turquoise thermal pool, the glass geodesic cat igloo, the 6m Christmas tree, and the dark heated driveway with scale black Hilux and snowmobiles. Studio lighting."
+      }
+    ],
+    "nasu": [
+      {
+        "num": "01 / 10",
+        "code": "NAS-IMG-01",
+        "file": "./assets/img/nasu_01_manor_estate_overview.jpg",
+        "title": "Mansión Europea Estilo Cotswolds / Provenza (Mitsui Home) en 1.5 Hectáreas Privadas",
+        "zone": "Finca Real Nasu Kogen / Rancho Privado · 15,000 m²",
+        "area": "15,000 m² (4,537.5 坪) Terreno · 360 m² Mansión + 420 m² Granja",
+        "total_jpy": 213000000,
+        "desc": "Para que あやめ viva su sueño de granja europea con buen clima (25°C en verano, a 72 min de Tokio en Shinkansen) y 100% de privacidad: mansión diseñada por Mitsui Home (三井ホーム) en piedra caliza natural color miel, entramado de roble y pizarra con tecnología antisísmica Premium Monocoque, rodeada de su Orangerie, el invernadero Seiwa de cristal, pradera ecuestre y establo.",
+        "items": [
+          [
+            "Terreno Privado 15,000 m² (1.5 Ha) con Bosque Perimetral y Agua de Manantial",
+            "¥68,000,000",
+            "$430,700"
+          ],
+          [
+            "Mansión Europea Mitsui Home 360 m² en Piedra Caliza Natural y Roble Macizo",
+            "¥145,000,000",
+            "$918,400"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50, golden afternoon sunlight. Sweeping architectural view of Villa Ayame Royal Highland Farm in Nasu Kogen, Japan: a romantic Cotswolds and Provençal-style limestone and oak manor house built by Mitsui Home with slate roofs, connected via a glass Orangerie to a glistening Victorian glass strawberry greenhouse (Seiwa Co.), manicured lavender and rose gardens, a white-fenced emerald meadow with two chestnut horses and two white alpacas, and a timber barn with a Matte-Black (#218) Toyota Hilux GR Sport and red Kubota tractor. Zero people."
+      },
+      {
+        "num": "02 / 10",
+        "code": "NAS-IMG-02",
+        "file": "./assets/img/nasu_02_seiwa_strawberry_glasshouse.jpg",
+        "title": "Invernadero Victoriano de Cristal Seiwa Co. (180 m²): Fresas a 80.0 cm & 0% Tierra",
+        "zone": "Pabellón Hidropónico Climatizado · Conectado a la Casa",
+        "area": "180.0 m² (54.45 坪) Invernadero de Cristal Templado",
+        "total_jpy": 35000000,
+        "desc": "Diseñado por Seiwa Co., Ltd. (株式会社誠和, líderes en ingeniería de invernaderos en Tochigi): estructura victoriana en acero blanco y cristal templado con piso de piedra blanca antibacterial (0% tierra, 0% barro, 0% insectos) y mesas hidropónicas elevadas a 80.0 cm exactos para que あやめ coseche fresas gigantes rojas Skyberry y blancas Milky Berry de pie con su canasta y vestido limpio.",
+        "items": [
+          [
+            "Estructura Victoriana en Acero Blanco & Cristal Templado Seiwa Co. (180 m²)",
+            "¥18,500,000",
+            "$117,100"
+          ],
+          [
+            "6 Líneas de Bancos Hidropónicos a 80.0 cm + Automatización Profarm IA (CO₂/Riego)",
+            "¥11,200,000",
+            "$70,900"
+          ],
+          [
+            "Piso Piedra Blanca Antibacterial Lavable + Salón de Té Francés en Mármol",
+            "¥5,300,000",
+            "$33,600"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50, bright morning light. Inside the 180 m2 Victorian glass strawberry pavilion engineered by Seiwa Co., Ltd. at Villa Ayame in Nasu Kogen: soaring white powder-coated steel trusses and tempered glass roof, immaculate white antibacterial stone flooring (zero soil, zero mud), and waist-high 80.0 cm elevated hydroponic benches overflowing with giant ruby-red Skyberry and pure-white Milky Berry strawberries. In the foreground stands a charming French bistro marble tea table with a woven harvesting basket and porcelain tea service. Zero people."
+      },
+      {
+        "num": "03 / 10",
+        "code": "NAS-IMG-03",
+        "file": "./assets/img/nasu_03_patisserie_kitchen_orangerie.jpg",
+        "title": "Cocina «Patisserie & Bakery» Francesa a 80.0 cm & Orangerie Acristalada de Gatos",
+        "zone": "Planta 1F Ala Sur · Conexión Directa al Invernadero",
+        "area": "48.0 m² Cocina Patisserie + 28.0 m² Orangerie (22.99 坪)",
+        "total_jpy": 18400000,
+        "desc": "A pocos pasos del invernadero: una cocina de pastelería francesa estilo Provenzal hecha a medida a 80.0 cm de altura por Mitsui Home, con isla de mármol blanco Statuario para amasar, horno pastelero en crema y latón bruñido, batidora de pedestal y campana artesanal. Se abre hacia la Orangerie soleada donde los 3 gatos senior duermen entre limoneros y lavandas sin peligro.",
+        "items": [
+          [
+            "Cocina Patisserie Francesa a 80.0 cm en Madera Crema, Roble y Mármol Statuario",
+            "¥7,800,000",
+            "$49,400"
+          ],
+          [
+            "Horno Francés La Cornue Château / Gaggenau + Abatidor de Temperatura Pastelero",
+            "¥5,900,000",
+            "$37,400"
+          ],
+          [
+            "Solárium Orangerie en Cristal Triple YKK AP + Árboles Cítricos & Camas Gatos",
+            "¥4,700,000",
+            "$29,800"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50, warm morning sun. Country-chic French Patisserie kitchen and glass Orangerie inside Villa Ayame Nasu Kogen by Mitsui Home: bespoke 80.0 cm cream-painted wood cabinetry with brushed brass hardware, a white Statuario marble pastry island displaying freshly baked Skyberry strawberry tarts, a vintage-style cream and brass French range oven, and wide glass doors opening into a sunlit Victorian Orangerie conservatory where three senior cats nap on cushioned rattan loungers among potted lemon trees and lavender. Zero people."
+      },
+      {
+        "num": "04 / 10",
+        "code": "NAS-IMG-04",
+        "file": "./assets/img/nasu_04_potager_paddock_hilux_barn.jpg",
+        "title": "Jardín Potager a 75 cm, Huevos Azules Araucana, Paddock Ecuestre & Granero Hilux/Kubota",
+        "zone": "Jardín Agrícola Sur & Pradera Oeste",
+        "area": "2,400 m² Jardín & Paddock + 140 m² Granero (768.3 坪)",
+        "total_jpy": 26500000,
+        "desc": "Todo diseñado para que あやめ disfrute del campo sin ensuciarse ni fatigarse: canteros elevados de piedra caliza a 75 cm de altura con riego por goteo automático para cortar hierbas aromáticas de pie, gallinero boutique donde los huevos azules pastel Araucana se recogen desde una compuerta limpia exterior, pradera con 2 caballos y 2 alpacas, y granero con tu Hilux Negra (#218) y el tractor Kubota.",
+        "items": [
+          [
+            "12 Canteros Elevados Potager en Piedra Caliza (75 cm) + Riego Automático Goteo",
+            "¥5,800,000",
+            "$36,700"
+          ],
+          [
+            "Gallinero Boutique Araucana con Compuerta Exterior Limpia de Recolección",
+            "¥2,700,000",
+            "$17,100"
+          ],
+          [
+            "Tractor Inteligente Kubota L-Series (Cabina A/C + GPS KSAS) + Hilux Negra (#218)",
+            "¥18,000,000",
+            "$114,000"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP, 23mm tilt-shift lens, f/8, ISO 50, sunny morning in Nasu Kogen. Foreground left shows formal French Potager raised limestone garden beds at 75 cm height with rosemary and cherry tomatoes on dry gravel paths, plus a charming cottage hen-house with an exterior clean wooden hatch revealing pastel-blue Araucana eggs. Middle ground shows a white post-and-rail fenced pasture with two gentle chestnut horses and two fluffy white alpacas. Background right shows a timber barn where a Matte-Black (#218) Toyota Hilux GR Sport and a red Kubota smart cab tractor are parked. Zero people."
+      },
+      {
+        "num": "05 / 10",
+        "code": "NAS-IMG-05",
+        "file": "./assets/img/nasu_05_luxury_oak_stables_tack.jpg",
+        "title": "Interior del Establo Europeo en Roble (0% Olores): Caballos «Aslan», Alpacas «Luna» & Tack Room",
+        "zone": "Pabellón Ecuestre a Sotavento · 140 m²",
+        "area": "140.0 m² (42.35 坪) Establo Boutique & Sala de Monturas",
+        "total_jpy": 22500000,
+        "desc": "Construido en roble blanco macizo y hierro forjado negro con remates de latón por Mitsui Home. Incorpora ventilación silenciosa de presión positiva con filtros de carbón activado en las vigas superiores (0% olor a establo), pasillo central en losas de piedra caliza antideslizante, bebederos automáticos de latón y un Tack Room acristalado para las monturas inglesas y botas de equitación.",
+        "items": [
+          [
+            "Estructura en Roble Blanco Macizo + 4 Boxes en Hierro Forjado y Latón",
+            "¥13,500,000",
+            "$85,500"
+          ],
+          [
+            "Sistema de Ventilación Hospitalaria Anti-Olores + Bebederos Automáticos Calefactados",
+            "¥4,200,000",
+            "$26,600"
+          ],
+          [
+            "Tack Room Acristalado en Cuero Inglés + 2 Caballos Mansos & 2 Alpacas Blancas",
+            "¥4,800,000",
+            "$30,400"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP digital back, 23mm tilt-shift lens, f/8, ISO 50, warm morning sunlight streaming through dormer clerestory windows. Inside a spotless luxury European-style heavy timber stable in Nasu Kogen built by Mitsui Home: high vaulted white-oak trusses, silent positive-pressure ventilation ducts, and a non-slip limestone paver aisle. Custom solid oak and black wrought-iron stalls with brass finials and nameplates ('ASLAN', 'LUNA') house two gentle chestnut riding horses and two fluffy white alpacas resting on clean golden straw. On the right, a glass-enclosed English leather Tack Room displays saddles and riding boots. Zero people."
+      },
+      {
+        "num": "06 / 10",
+        "code": "NAS-IMG-06",
+        "file": "./assets/img/nasu_06_espalier_orchard_shine_muscat.jpg",
+        "title": "Huerto Frutal en Espaldera (0% Barro), Pérgola de Uvas Shine Muscat & Colmenar de Miel",
+        "zone": "Terraza Frutal Este · 1,200 m²",
+        "area": "1,200 m² (363.0 坪) Huerto de Cosecha a la Altura de la Mano",
+        "total_jpy": 8900000,
+        "desc": "Los árboles frutales están guiados mediante la técnica francesa de Espaldera (Espalier) y pérgola de cedro con techo de cristal antilluvia a 140 cm de altura sobre senderos anchos de piedra caliza seca. Así あやめ puede caminar en zapatos normales y cortar racimos de uvas verdes Shine Muscat, duraznos blancos Hakuto y cerezas Sato Nishiki a la altura de sus manos, junto a 3 colmenas de miel de lavanda.",
+        "items": [
+          [
+            "Pérgola Curva en Cedro y Cristal Templado + Viñedo Uvas Shine Muscat",
+            "¥4,400,000",
+            "$27,800"
+          ],
+          [
+            "Árboles en Espaldera (Duraznos Hakuto, Cerezas Sato Nishiki, Peras Nashi)",
+            "¥2,600,000",
+            "$16,500"
+          ],
+          [
+            "Senderos de Piedra Caliza Cotswolds (0% Barro) + 3 Colmenas Langstroth Miel",
+            "¥1,900,000",
+            "$12,000"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP digital back, 23mm tilt-shift lens, f/8, ISO 50, golden morning sunlight in the Nasu highlands. Wide, immaculate dry-laid Cotswolds limestone garden walkways wind through a formal French espalier orchard where Japanese white peaches (Hakuto) and red Sato Nishiki cherries grow flat along tensioned wires on the left, while an arched cedar-and-glass rain-shielded pergola on the right holds hanging clusters of ripe green Shine Muscat grapes at 140 cm height. Beyond a low stone wall sit three white wooden beehives among lavender bushes with the Nasu mountains in the background. Zero people."
+      },
+      {
+        "num": "07 / 10",
+        "code": "NAS-IMG-07",
+        "file": "./assets/img/nasu_07_aerial_ranch_solar_vineyard.jpg",
+        "title": "Vista Aérea del Rancho Autosustentable: Big Frame Timber, Solar 50 kW, Viñedo & Cabañas",
+        "zone": "Panorámica General del Dominio Agrícola · 1.5 Hectáreas",
+        "area": "15,000 m² (4,537.5 坪) Autosuficiencia Energética y Alimentaria",
+        "total_jpy": 28500000,
+        "desc": "Vista aérea del ecosistema autosustentable: muestra la integración de la arquitectura maderera de gran claro (Sumitomo Big Frame / Mitsui Home), los invernaderos climatizados iluminados al atardecer, las hileras de cultivo orgánico, la granja solar agrivoltaica de 50 kW que alimenta toda la propiedad con costo eléctrico cero, 2 cabañas de huéspedes en el bosque de abedules y la flota (Hilux Negra #218, Kubota y UTV).",
+        "items": [
+          [
+            "Planta Solar Agrivoltaica de 50 kW + Banco de Baterías Industriales (Costo Luz ¥0)",
+            "¥14,500,000",
+            "$91,800"
+          ],
+          [
+            "2 Cabañas de Huéspedes en Bosque de Abedules (Madera Laminada Big Frame)",
+            "¥11,200,000",
+            "$70,900"
+          ],
+          [
+            "Vehículo Utilitario Eléctrico Silencioso (UTV) + Red de Caminos Internos",
+            "¥2,800,000",
+            "$17,700"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP aerial perspective, 24mm lens, f/8, ISO 50, golden sunset. Sweeping aerial view of the self-sustaining luxury private ranch estate in Japan: heavy-timber Big Frame main lodge with glass conservatory, glowing climate-controlled glasshouses, neat vineyard rows, a 50 kW solar array, white-fenced horse pastures with two chestnut horses, two guest cabins nestled among silver birch trees, and a gravel forecourt with a Matte-Black (#218) Toyota Hilux GR Sport, red Kubota cab tractor, and electric UTV. Zero people."
+      },
+      {
+        "num": "08 / 10",
+        "code": "NAS-IMG-08",
+        "file": "./assets/img/nasu_08_provencal_master_copper_bath.jpg",
+        "title": "Master Suite Provenzal (2F), Vestidor Couture (153 cm) & Tina Clawfoot de Cobre",
+        "zone": "Planta Superior 2F de la Mansión · Vista al Bosque de Nasu",
+        "area": "58.0 m² (17.54 坪) Dormitorio Principal, Vestidor y Baño",
+        "total_jpy": 14900000,
+        "desc": "El refugio privado de Bruno y あやめ en la planta alta de la mansión: techo abuhardillado con vigas de roble blanco blanqueadas a la cal, cama King capitoné en lino francés junto a una chimenea de piedra caliza, vestidor acristalado iluminado a 153 cm de alcance para los vestidos y sombreros de campo de あやめ, y bañera exenta de cobre martillado frente a los ventanales arqueados.",
+        "items": [
+          [
+            "Dormitorio Principal en Roble Blanqueado + Cama Lino Francés + Chimenea Caliza",
+            "¥6,200,000",
+            "$39,300"
+          ],
+          [
+            "Vestidor Couture Acristalado Iluminado (Barras a 145 cm para あやめ)",
+            "¥4,400,000",
+            "$27,800"
+          ],
+          [
+            "Bañera Clawfoot en Cobre Martillado Devon&Devon + Grifería Latón Inglés",
+            "¥4,300,000",
+            "$27,200"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP digital back, 23mm tilt-shift lens, f/8, ISO 50, soft morning highland sunlight. A romantic European manor master bedroom in Nasu Kogen by Mitsui Home with vaulted ceilings, exposed whitewashed oak beams, and plastered limestone walls. A king-size French linen tufted bed sits beside a carved Cotswolds limestone fireplace. In the middle ground, a bespoke illuminated glass-door couture walk-in wardrobe displays floral dresses and sun hats at an ergonomic 153 cm reach. On the right, an open-concept en-suite bathroom features a freestanding hammered copper clawfoot soaking tub facing arched windows overlooking the forest. Zero people."
+      },
+      {
+        "num": "09 / 10",
+        "code": "NAS-IMG-09",
+        "file": "./assets/img/nasu_09_b2b_skyberry_packaging.jpg",
+        "title": "Pabellón de Empaque B2B («Nasu Highland Berry Boutique») & Bahía Hilux / Kubota",
+        "zone": "Acceso de Servicio Norte · Motor Financiero de la Finca",
+        "area": "65.0 m² (19.66 坪) Sala Limpia de Selección + Cámara Fría 2.0°C",
+        "total_jpy": 16800000,
+        "desc": "Aquí es donde la granja deja de ser un gasto y se convierte en un negocio rentable (+¥3.5M a +¥7.0M JPY libres al año): los técnicos de JA Tochigi clasifican las fresas gigantes Skyberry y Milky Berry sobre mesas de cuarzo blanco en cajas de madera de Paulownia (Kiri) con satén (vendidas a ¥12,000 / $80 USD la caja en Tokio), las pre-enfrían en la cámara a 2.0°C y las despachan sin tocar tu zona privada.",
+        "items": [
+          [
+            "Pabellón en Madera y Cristal + Isla Clasificadora en Cuarzo Blanco e Inox 80cm",
+            "¥7,200,000",
+            "$45,600"
+          ],
+          [
+            "Cámara Frigorífica Walk-In a 2.0°C (92% Humedad) con Telemetría Digital",
+            "¥5,800,000",
+            "$36,700"
+          ],
+          [
+            "Stock de Cajas Joyero en Madera Paulownia (Kiri) + Selladora & Etiquetado B2B",
+            "¥3,800,000",
+            "$24,100"
+          ]
+        ],
+        "prompt": "Shot on Phase One IQ4 150MP digital back, 23mm tilt-shift lens, f/8, ISO 50, crisp daylight. Inside the B2B agricultural packing pavilion ('Nasu Highland Berry Boutique') next to the Seiwa greenhouse: a spotless 80.0 cm white quartz and stainless-steel grading island displays luxury paulownia wood (Kiri) gift boxes lined with white satin holding giant ruby-red Skyberry and pure-white Milky Berry strawberries with ¥12,000 price tags. Behind the counter is a glass-fronted 2.0°C walk-in cold storage room. Through wide open timber carriage doors on the right, a covered stone bay holds a Matte-Black (#218) Toyota Hilux GR Sport and a red Kubota tractor. Zero people."
+      },
+      {
+        "num": "10 / 10",
+        "code": "NAS-IMG-10",
+        "file": "./assets/img/nasu_10_blender_maqueta.png",
+        "title": "Maqueta Volumétrica 3D en Blender 5.0.1 Cycles (Escala 1:150 · Archivos .BLEND & .GLB)",
+        "zone": "Finca Completa 1.5 Hectáreas · Mansión, Invernadero, Potager, Paddock y Granero",
+        "area": "Modelo 3D Nativo Completo · 15,000 m² Terreno + 780 m² Edificados",
+        "total_jpy": 2900000,
+        "desc": "Maqueta arquitectónica renderizada en Blender 5.0.1 Cycles sobre pedestal de nogal: muestra la zonificación maestra entre el Área Privada de Bruno y あやめ (Mansión Mitsui Home, Orangerie, Jardín Potager, Pradera Ecuestre) y el Área Operativa B2B (Invernadero Seiwa de 180 m², Pabellón de Empaque y Granero de Maquinaria con acceso independiente).",
+        "items": [
+          [
+            "Masterplan Agronómico & Zonificación Acústica/Sanitaria BIM/Blender 1:150",
+            "¥1,800,000",
+            "$11,400"
+          ],
+          [
+            "Registro de Marca Agrícola 'Nasu Highland Berry' & Certificación Nōchi-hō",
+            "¥1,100,000",
+            "$7,000"
+          ]
+        ],
+        "prompt": "Blender 5.0.1 Cycles raytraced architectural scale model (1:150 maquette) of Villa Ayame Royal Highland Farm in Nasu Kogen on a dark walnut exhibition plinth. Shows the Cotswolds limestone manor house with slate roof, glass Orangerie, the 180 m2 Victorian glass strawberry greenhouse with 6 elevated white hydroponic benches inside, raised limestone Potager beds, white-fenced horse paddock, and timber barn with scale black Hilux and red Kubota tractor. Studio lighting."
+      }
+    ]
+  }
+}
