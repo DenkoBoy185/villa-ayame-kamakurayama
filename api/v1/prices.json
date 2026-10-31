@@ -1,13 +1,13 @@
 {
   "api_version": "2.4.0-live",
-  "generated_at_utc": "2026-10-28T22:44:49.421295+00:00",
+  "generated_at_utc": "2026-10-31T09:57:07.153374+00:00",
   "exchange_rate_source": "https://open.er-api.com/v6/latest/USD",
   "base_currency": "JPY",
   "live_rates_per_usd": {
-    "JPY": 157.89,
-    "EUR": 0.8975,
-    "MXN": 18.67,
-    "PEN": 3.45
+    "JPY": 157.49,
+    "EUR": 0.8956,
+    "MXN": 18.82,
+    "PEN": 3.46
   },
   "japan_mlit_construction_indices_2026": {
     "structural_steel_index": 134.2,
@@ -21,31 +21,31 @@
     "total_houses": 4,
     "total_cataloged_systems": 52,
     "grand_total_jpy": 1716800000,
-    "grand_total_usd": 10873393,
+    "grand_total_usd": 10901010,
     "houses": {
       "kamakura": {
         "name": "Casa 1 · Villa あやめ Kamakurayama (Acantilado Fuji & Enoshima)",
         "item_count": 24,
         "total_jpy": 416800000,
-        "total_usd": 2639813
+        "total_usd": 2646517
       },
       "okinawa": {
         "name": "Casa 2 · Villa あやめ Coral Sanctuary (Isla Privada Okinawa)",
         "item_count": 9,
         "total_jpy": 475000000,
-        "total_usd": 3008424
+        "total_usd": 3016065
       },
       "niseko": {
         "name": "Casa 3 · Villa あやめ Snow Peak Sanctuary (Hokkaido Niseko Navidad & Fight Camp)",
         "item_count": 10,
         "total_jpy": 485000000,
-        "total_usd": 3071759
+        "total_usd": 3079561
       },
       "nasu": {
         "name": "Casa 4 · Villa あやめ Royal Highland Farm & Manor (Nasu Kogen Granja Funcional あやめ)",
         "item_count": 9,
         "total_jpy": 340000000,
-        "total_usd": 2153398
+        "total_usd": 2158867
       }
     }
   },
@@ -60,7 +60,7 @@
       "qty": "505.44 m²",
       "unit_jpy": 154321,
       "total_jpy": 78000000,
-      "total_usd": 494015,
+      "total_usd": 495270,
       "notes": "Vistas duales garantizadas al Monte Fuji (265° W) e Isla Enoshima (205° SSW)."
     },
     {
@@ -73,7 +73,7 @@
       "qty": "1 Lote Sísmico",
       "unit_jpy": 38500000,
       "total_jpy": 38500000,
-      "total_usd": 243841,
+      "total_usd": 244460,
       "notes": "Muros de contención impermeabilizados de 300mm y drenaje perimetral de tifones."
     },
     {
@@ -86,7 +86,7 @@
       "qty": "418.50 m²",
       "unit_jpy": 394265,
       "total_jpy": 165000000,
-      "total_usd": 1045031,
+      "total_usd": 1047686,
       "notes": "Incluye carpintería en Nogal Negro Americano, Ciprés Hinoki y ventanales YKK AP APW 430."
     },
     {
@@ -99,7 +99,7 @@
       "qty": "1 Sistema",
       "unit_jpy": 6800000,
       "total_jpy": 6800000,
-      "total_usd": 43068,
+      "total_usd": 43177,
       "notes": "Cajones motorizados Blum Servo-Drive, alacenas abatibles Swing-Down y zócalo aspirador."
     },
     {
@@ -112,7 +112,7 @@
       "qty": "1 Set Chef",
       "unit_jpy": 3450000,
       "total_jpy": 3450000,
-      "total_usd": 21851,
+      "total_usd": 21906,
       "notes": "Importación alemana oficial con extracción integrada de ultra bajo ruido."
     },
     {
@@ -125,7 +125,7 @@
       "qty": "1 Par",
       "unit_jpy": 4200000,
       "total_jpy": 4200000,
-      "total_usd": 26601,
+      "total_usd": 26668,
       "notes": "Panelado en nogal negro idéntico al salón Gorogoro; hielo cristalino filtrado."
     },
     {
@@ -138,7 +138,7 @@
       "qty": "1 Estación 4.5m",
       "unit_jpy": 5800000,
       "total_jpy": 5800000,
-      "total_usd": 36734,
+      "total_usd": 36828,
       "notes": "Acero inoxidable marino 316L resistente al salitre de la Bahía de Sagami."
     },
     {
@@ -151,7 +151,7 @@
       "qty": "1 Trío BBQ",
       "unit_jpy": 3900000,
       "total_jpy": 3900000,
-      "total_usd": 24701,
+      "total_usd": 24763,
       "notes": "Incluye campana extractora comercial de 2,400 m³/h y dispensador de cerveza fría (2°C)."
     },
     {
@@ -164,7 +164,7 @@
       "qty": "1 Pit 5.6m×4.4m",
       "unit_jpy": 4600000,
       "total_jpy": 4600000,
-      "total_usd": 29134,
+      "total_usd": 29208,
       "notes": "Cero hilos sueltos para las uñas de los 3 gatos senior; piso radiante hidrónico debajo."
     },
     {
@@ -177,7 +177,7 @@
       "qty": "1 Juego (11 pzs)",
       "unit_jpy": 2950000,
       "total_jpy": 2950000,
-      "total_usd": 18684,
+      "total_usd": 18731,
       "notes": "Bordes redondeados suaves, acabado al aceite natural hipoalergénico."
     },
     {
@@ -190,7 +190,7 @@
       "qty": "1 Sistema",
       "unit_jpy": 4850000,
       "total_jpy": 4850000,
-      "total_usd": 30718,
+      "total_usd": 30796,
       "notes": "Oculto en ebanistería de nogal para no bloquear la vista al Monte Fuji."
     },
     {
@@ -203,7 +203,7 @@
       "qty": "1 Solárium",
       "unit_jpy": 2800000,
       "total_jpy": 2800000,
-      "total_usd": 17734,
+      "total_usd": 17779,
       "notes": "Piso de corcho térmico antideslizante para cuidar la cadera de los 3 gatos senior."
     },
     {
@@ -216,7 +216,7 @@
       "qty": "23.8 m² Agua",
       "unit_jpy": 18500000,
       "total_jpy": 18500000,
-      "total_usd": 117170,
+      "total_usd": 117468,
       "notes": "Incluye rompeolas antisísmicos, cubierta térmica motorizada oculta y playa húmeda de 30cm."
     },
     {
@@ -229,7 +229,7 @@
       "qty": "1 Lounge",
       "unit_jpy": 3400000,
       "total_jpy": 3400000,
-      "total_usd": 21534,
+      "total_usd": 21589,
       "notes": "Encendido electrónico instantáneo sin humo ni cenizas frente al Monte Fuji."
     },
     {
@@ -242,7 +242,7 @@
       "qty": "34 m²",
       "unit_jpy": 4100000,
       "total_jpy": 4100000,
-      "total_usd": 25967,
+      "total_usd": 26033,
       "notes": "Aislamiento acústico Dr-45 para que la hermana de あやめ y el bebé descansen en paz total."
     },
     {
@@ -255,7 +255,7 @@
       "qty": "4 Dormitorios",
       "unit_jpy": 5600000,
       "total_jpy": 5600000,
-      "total_usd": 35468,
+      "total_usd": 35558,
       "notes": "¥1,400,000 por dormitorio: cama ortopédica, escritorio ergonómico, clóset y tragaluces con blackout."
     },
     {
@@ -268,7 +268,7 @@
       "qty": "1 Master Suite",
       "unit_jpy": 3800000,
       "total_jpy": 3800000,
-      "total_usd": 24067,
+      "total_usd": 24129,
       "notes": "Orientada directo al Monte Fuji con control domótico silencioso desde el cabezal."
     },
     {
@@ -281,7 +281,7 @@
       "qty": "24 m²",
       "unit_jpy": 4900000,
       "total_jpy": 4900000,
-      "total_usd": 31034,
+      "total_usd": 31113,
       "notes": "Trampa de cabello en lavabo profundo y succión al ras del suelo para barrer cabellos sintéticos en 3 seg."
     },
     {
@@ -294,7 +294,7 @@
       "qty": "1 Set Completo",
       "unit_jpy": 6900000,
       "total_jpy": 6900000,
-      "total_usd": 43701,
+      "total_usd": 43812,
       "notes": "El cristal pasa de transparente (vista a Enoshima) a opaco privado en 0.1 segundos."
     },
     {
@@ -307,7 +307,7 @@
       "qty": "20.5 m²",
       "unit_jpy": 3900000,
       "total_jpy": 3900000,
-      "total_usd": 24701,
+      "total_usd": 24763,
       "notes": "Piso flotante vulcanizado de 30mm para absorber impactos de derribos y pesas (0 dB hacia arriba)."
     },
     {
@@ -320,7 +320,7 @@
       "qty": "7.5 m²",
       "unit_jpy": 4600000,
       "total_jpy": 4600000,
-      "total_usd": 29134,
+      "total_usd": 29208,
       "notes": "Recuperación muscular y corte de peso al lado del Dojo."
     },
     {
@@ -333,7 +333,7 @@
       "qty": "28 m²",
       "unit_jpy": 8200000,
       "total_jpy": 8200000,
-      "total_usd": 51935,
+      "total_usd": 52067,
       "notes": "Cámara flotante sobre neopreno; Bruno puede grabar o jugar a las 3:00 AM en silencio absoluto."
     },
     {
@@ -346,7 +346,7 @@
       "qty": "4 Vehículos",
       "unit_jpy": 18050000,
       "total_jpy": 18050000,
-      "total_usd": 114320,
+      "total_usd": 114610,
       "notes": "Hilux Negra (¥4.65M) + Vellfire (¥6.8M) + WRX S4 (¥3.9M) + GR86 (¥2.7M) llave en mano."
     },
     {
@@ -359,7 +359,7 @@
       "qty": "1 Sistema",
       "unit_jpy": 14000000,
       "total_jpy": 14000000,
-      "total_usd": 88669,
+      "total_usd": 88895,
       "notes": "Renovación completa del aire cada 28 minutos con 0% olor a gatos y respaldo total ante apagones."
     },
     {
@@ -372,7 +372,7 @@
       "qty": "3,800 m²",
       "unit_jpy": 31579,
       "total_jpy": 120000000,
-      "total_usd": 760023,
+      "total_usd": 761953,
       "notes": "100% edificable con permisos aprobados y acceso directo sin depender de helicóptero en tormenta."
     },
     {
@@ -385,7 +385,7 @@
       "qty": "410 m²",
       "unit_jpy": 475610,
       "total_jpy": 195000000,
-      "total_usd": 1235037,
+      "total_usd": 1238174,
       "notes": "Garantizado contra tifones de 300 km/h (presión 5,000 Pa) y cero corrosión por salitre en 100 años."
     },
     {
@@ -398,7 +398,7 @@
       "qty": "95 m²",
       "unit_jpy": 16500000,
       "total_jpy": 16500000,
-      "total_usd": 104503,
+      "total_usd": 104769,
       "notes": "Vista directa a tortugas marinas y peces payaso desde la cama y la hamaca sobre el agua."
     },
     {
@@ -411,7 +411,7 @@
       "qty": "1 Suite",
       "unit_jpy": 8400000,
       "total_jpy": 8400000,
-      "total_usd": 53202,
+      "total_usd": 53337,
       "notes": "Bañera monolítica tallada en coral fósil frente a la laguna turquesa sin vecinos en el horizonte."
     },
     {
@@ -424,7 +424,7 @@
       "qty": "45 m²",
       "unit_jpy": 11200000,
       "total_jpy": 11200000,
-      "total_usd": 70935,
+      "total_usd": 71116,
       "notes": "Entrenamiento descalzo frente a la brisa del mar y zambullida inmediata en el cenote de roca caliza."
     },
     {
@@ -437,7 +437,7 @@
       "qty": "68 m²",
       "unit_jpy": 14800000,
       "total_jpy": 14800000,
-      "total_usd": 93736,
+      "total_usd": 93974,
       "notes": "Bancos sumergidos dentro de la piscina de agua salada y mesa en la arena para comer descalzos."
     },
     {
@@ -450,7 +450,7 @@
       "qty": "1 Complejo",
       "unit_jpy": 12500000,
       "total_jpy": 12500000,
-      "total_usd": 79169,
+      "total_usd": 79370,
       "notes": "Los 3 gatos senior caminan por pasarelas sombreadas a 12° entre las ramas del árbol Gajumaru."
     },
     {
@@ -463,7 +463,7 @@
       "qty": "1 Búnker",
       "unit_jpy": 34000000,
       "total_jpy": 34000000,
-      "total_usd": 215340,
+      "total_usd": 215887,
       "notes": "Autonomía eléctrica e hídrica 100% Off-Grid + cierre acorazado de toda la villa en 45 segundos."
     },
     {
@@ -476,7 +476,7 @@
       "qty": "1 Flota Marina",
       "unit_jpy": 62600000,
       "total_jpy": 62600000,
-      "total_usd": 396479,
+      "total_usd": 397486,
       "notes": "Incluye garaje náutico con elevador hidráulico para proteger las embarcaciones durante tifones."
     },
     {
@@ -489,7 +489,7 @@
       "qty": "9,200 m²",
       "unit_jpy": 15000,
       "total_jpy": 138000000,
-      "total_usd": 874026,
+      "total_usd": 876246,
       "notes": "Colinda con bosque nacional protegido; 0% vecinos, 0% hoteles, silencio invernal absoluto."
     },
     {
@@ -502,7 +502,7 @@
       "qty": "485 m²",
       "unit_jpy": 459794,
       "total_jpy": 223000000,
-      "total_usd": 1412376,
+      "total_usd": 1415963,
       "notes": "Aleros con derretimiento térmico automático (Roof Snow-Melt) y piedra volcánica de Tokachi."
     },
     {
@@ -515,7 +515,7 @@
       "qty": "95 m²",
       "unit_jpy": 11800000,
       "total_jpy": 11800000,
-      "total_usd": 74736,
+      "total_usd": 74925,
       "notes": "El gimnasio residencial de artes marciales más completo de Japón con vista directa al Monte Yotei."
     },
     {
@@ -528,7 +528,7 @@
       "qty": "Zona S&C",
       "unit_jpy": 9400000,
       "total_jpy": 9400000,
-      "total_usd": 59535,
+      "total_usd": 59686,
       "notes": "Equipamiento de nivel UFC Performance Institute para preparación física de alto rendimiento."
     },
     {
@@ -541,7 +541,7 @@
       "qty": "Zona Recovery",
       "unit_jpy": 14800000,
       "total_jpy": 14800000,
-      "total_usd": 93736,
+      "total_usd": 93974,
       "notes": "Recuperación celular acelerada, baño de hielo alpino y sauna panorámico frente a la nieve."
     },
     {
@@ -554,7 +554,7 @@
       "qty": "60 m² Agua",
       "unit_jpy": 38000000,
       "total_jpy": 38000000,
-      "total_usd": 240674,
+      "total_usd": 241285,
       "notes": "Nadar a 40°C bajo la nieve polvo de Navidad mirando el Monte Yotei iluminado."
     },
     {
@@ -567,7 +567,7 @@
       "qty": "1 Domo + Pino",
       "unit_jpy": 6500000,
       "total_jpy": 6500000,
-      "total_usd": 41168,
+      "total_usd": 41272,
       "notes": "Los 3 gatos senior ven caer los copos de nieve en 360° calentitos junto a la chimenea."
     },
     {
@@ -580,7 +580,7 @@
       "qty": "82 m²",
       "unit_jpy": 19500000,
       "total_jpy": 19500000,
-      "total_usd": 123504,
+      "total_usd": 123817,
       "notes": "Diseñada para hornear pavo navideño, panettones, chocolates calientes y asados de venado/Wagyu."
     },
     {
@@ -593,7 +593,7 @@
       "qty": "54 m²",
       "unit_jpy": 9800000,
       "total_jpy": 9800000,
-      "total_usd": 62069,
+      "total_usd": 62226,
       "notes": "Madera de Hiba de Aomori con aroma natural relajante y vista frontal al Monte Yotei desde la cama."
     },
     {
@@ -606,7 +606,7 @@
       "qty": "B1F Completo",
       "unit_jpy": 14200000,
       "total_jpy": 14200000,
-      "total_usd": 89936,
+      "total_usd": 90164,
       "notes": "0% palear nieve: el glicol geotérmico mantiene toda la rampa y escaleras secas a +8°C todo el invierno."
     },
     {
@@ -619,7 +619,7 @@
       "qty": "15,000 m²",
       "unit_jpy": 4533,
       "total_jpy": 68000000,
-      "total_usd": 430680,
+      "total_usd": 431773,
       "notes": "A 72 min de Tokio en Shinkansen; verano fresco (25°C), sin tifones marinos y máxima privacidad."
     },
     {
@@ -632,7 +632,7 @@
       "qty": "360 m²",
       "unit_jpy": 402778,
       "total_jpy": 145000000,
-      "total_usd": 918361,
+      "total_usd": 920693,
       "notes": "El sueño europeo de あやめ con aislamiento térmico superior y resistencia sísmica Monocoque."
     },
     {
@@ -645,7 +645,7 @@
       "qty": "180 m²",
       "unit_jpy": 194444,
       "total_jpy": 35000000,
-      "total_usd": 221673,
+      "total_usd": 222236,
       "notes": "0% tierra, 0% barro, 0% insectos: あやめ cosecha fresas Skyberry y Milky Berry en vestido limpio."
     },
     {
@@ -658,7 +658,7 @@
       "qty": "76 m²",
       "unit_jpy": 18400000,
       "total_jpy": 18400000,
-      "total_usd": 116537,
+      "total_usd": 116833,
       "notes": "Conectada por pasillo de cristal al invernadero para llevar las fresas recién cortadas directo al horno."
     },
     {
@@ -671,7 +671,7 @@
       "qty": "140 m² + 4 Animales",
       "unit_jpy": 22500000,
       "total_jpy": 22500000,
-      "total_usd": 142504,
+      "total_usd": 142866,
       "notes": "Ubicado a sotavento con filtración de aire; limpieza 100% a cargo del capataz local."
     },
     {
@@ -684,7 +684,7 @@
       "qty": "2,400 m² Jardín",
       "unit_jpy": 11600000,
       "total_jpy": 11600000,
-      "total_usd": 73469,
+      "total_usd": 73655,
       "notes": "Huevos azules recogidos desde compuerta limpia exterior; uvas y duraznos a 140 cm de altura sin barro."
     },
     {
@@ -697,7 +697,7 @@
       "qty": "32 m²",
       "unit_jpy": 8900000,
       "total_jpy": 8900000,
-      "total_usd": 56368,
+      "total_usd": 56512,
       "notes": "Conservación perfecta de las mermeladas Skyberry de あやめ, quesos de Nasu y colección de whisky de Bruno."
     },
     {
@@ -710,7 +710,7 @@
       "qty": "58 m²",
       "unit_jpy": 10600000,
       "total_jpy": 10600000,
-      "total_usd": 67135,
+      "total_usd": 67306,
       "notes": "Vistas panorámicas a los bosques de Nasu desde la bañera de cobre con agua termal mineral."
     },
     {
@@ -723,7 +723,7 @@
       "qty": "Flota Agrícola",
       "unit_jpy": 20000000,
       "total_jpy": 20000000,
-      "total_usd": 126670,
+      "total_usd": 126992,
       "notes": "Genera ¥14.5M–¥18.0M/año en ventas B2B de fresas de lujo (¥12,000/caja) → Utilidad Neta +¥3.5M a +¥7.0M/año."
     }
   ]
